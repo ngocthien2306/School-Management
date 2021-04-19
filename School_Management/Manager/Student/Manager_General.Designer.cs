@@ -341,7 +341,7 @@ namespace School_Management.Manager.Student
             // 
             // Check_female
             // 
-            this.Check_female.Location = new System.Drawing.Point(354, 20);
+            this.Check_female.Location = new System.Drawing.Point(354, 22);
             this.Check_female.Name = "Check_female";
             this.Check_female.Properties.Caption = "Fename";
             this.Check_female.Size = new System.Drawing.Size(68, 19);
@@ -350,7 +350,7 @@ namespace School_Management.Manager.Student
             // 
             // Check_male
             // 
-            this.Check_male.Location = new System.Drawing.Point(298, 20);
+            this.Check_male.Location = new System.Drawing.Point(298, 22);
             this.Check_male.Name = "Check_male";
             this.Check_male.Properties.Caption = "Male";
             this.Check_male.Size = new System.Drawing.Size(68, 19);
@@ -360,7 +360,7 @@ namespace School_Management.Manager.Student
             // Birthday_picker
             // 
             this.Birthday_picker.EditValue = null;
-            this.Birthday_picker.Location = new System.Drawing.Point(71, 15);
+            this.Birthday_picker.Location = new System.Drawing.Point(71, 18);
             this.Birthday_picker.Name = "Birthday_picker";
             this.Birthday_picker.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -378,7 +378,7 @@ namespace School_Management.Manager.Student
             // 
             // Phone_student
             // 
-            this.Phone_student.Location = new System.Drawing.Point(71, 60);
+            this.Phone_student.Location = new System.Drawing.Point(71, 64);
             this.Phone_student.Name = "Phone_student";
             this.Phone_student.Size = new System.Drawing.Size(128, 20);
             this.Phone_student.TabIndex = 4;

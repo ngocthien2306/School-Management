@@ -13,7 +13,7 @@ using System.IO;
 
 namespace School_Management.Manager.Student
 {
-    public partial class Manager_General : DevExpress.XtraEditors.XtraForm
+    public partial class Manager_General : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         public Manager_General()
         {
