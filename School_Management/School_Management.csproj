@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E9B5FC56-A660-48A7-8561-17799351F03D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>School_Management</RootNamespace>
+    <AssemblyName>School_Management</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v19.1" />
+    <Reference Include="DevExpress.Data.v19.1" />
+    <Reference Include="DevExpress.Images.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.1" />
+    <Reference Include="DevExpress.Sparkline.v19.1.Core" />
+    <Reference Include="DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v19.1" />
+    <Reference Include="DevExpress.Printing.v19.1.Core" />
+    <Reference Include="DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Word, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Word.v4.0.Utilities, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Manager\Login\Login Account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Login\Login Account.Designer.cs">
+      <DependentUpon>Login Account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Login\Users.cs" />
+    <Compile Include="Manager\Student\Add_Students.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Student\Add_Students.Designer.cs">
+      <DependentUpon>Add_Students.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Student\Course.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Student\Edit_Remove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Student\Edit_Remove.Designer.cs">
+      <DependentUpon>Edit_Remove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Student\Find_Student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Student\Find_Student.Designer.cs">
+      <DependentUpon>Find_Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Student\IF_Student.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Student\LoginUser.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Student\Manager Student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Student\Manager Student.Designer.cs">
+      <DependentUpon>Manager Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Student\List_Student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Student\List_Student.Designer.cs">
+      <DependentUpon>List_Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Student\Manager_General.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Student\Manager_General.Designer.cs">
+      <DependentUpon>Manager_General.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Student\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Student\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Student\Model_School.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model_School.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Student\Print_List_Student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Student\Print_List_Student.Designer.cs">
+      <DependentUpon>Print_List_Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Student\Score.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Student\Student.cs" />
+    <Compile Include="Manager\Student\sysdiagram.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Manager_StudentDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Manager_StudentDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="My_Database.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Manager\Login\Login Account.resx">
+      <DependentUpon>Login Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Student\Add_Students.resx">
+      <DependentUpon>Add_Students.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Student\Edit_Remove.resx">
+      <DependentUpon>Edit_Remove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Student\Find_Student.resx">
+      <DependentUpon>Find_Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Student\Manager Student.resx">
+      <DependentUpon>Manager Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Student\List_Student.resx">
+      <DependentUpon>List_Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Student\Manager_General.resx">
+      <DependentUpon>Manager_General.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Student\Print_List_Student.resx">
+      <DependentUpon>Print_List_Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <EntityDeploy Include="Manager\Student\Model_School.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model_School.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Manager\Student\Model_School.edmx.diagram">
+      <DependentUpon>Model_School.edmx</DependentUpon>
+    </None>
+    <None Include="Manager_StudentDataSet.xsc">
+      <DependentUpon>Manager_StudentDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Manager_StudentDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Manager_StudentDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Manager_StudentDataSet.xss">
+      <DependentUpon>Manager_StudentDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Manager\Course\" />
+    <Folder Include="Manager\Score\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\School123.jpg" />
+    <Content Include="Manager\Student\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model_School.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Manager\Student\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model_School.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Resource\School123.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
