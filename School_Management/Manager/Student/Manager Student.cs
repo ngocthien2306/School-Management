@@ -57,6 +57,8 @@ namespace School_Management.Manager.Student
 
         private void M010403_ItemClick(object sender, ItemClickEventArgs e)
         {
+            List list = new List();
+            list.ShowDialog();
         }
 
         private void DataGrid_Student_Click(object sender, EventArgs e)
@@ -74,6 +76,12 @@ namespace School_Management.Manager.Student
         {
             Print_List_Student print = new Print_List_Student();
             print.Show();
+        }
+
+        private void M010501_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Statics sta = new Statics();
+            sta.ShowDialog();
         }
     }
 }

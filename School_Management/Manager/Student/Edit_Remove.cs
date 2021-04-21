@@ -13,7 +13,7 @@ using System.Windows.Forms;
 
 namespace School_Management.Manager.Student
 {
-    public partial class Edit_Remove : DevExpress.XtraEditors.XtraForm
+    public partial class Edit_Remove : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         public Edit_Remove()
         {

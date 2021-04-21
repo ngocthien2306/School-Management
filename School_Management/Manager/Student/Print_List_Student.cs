@@ -28,7 +28,7 @@ namespace School_Management.Manager.Student
             this.add_StudentTableAdapter.Fill(this.manager_StudentDataSet.Add_Student);
             Check_all.Checked = true;
             Yes_Check.Checked = true;
-            Day1.DateTime = DateTime.MinValue;
+            Day1.DateTime = DateTime.MaxValue;
             Day2.DateTime = DateTime.Now;
             this.ShowList();
 
@@ -230,6 +230,11 @@ namespace School_Management.Manager.Student
         private void Print_bt_Click(object sender, EventArgs e)
         {
             this.Save_Documment();
+        }
+
+        private void Day1_EditValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

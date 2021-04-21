@@ -192,6 +192,7 @@ namespace School_Management.Manager.Student
             this.M010501.Id = 11;
             this.M010501.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("M010501.ImageOptions.SvgImage")));
             this.M010501.Name = "M010501";
+            this.M010501.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.M010501_ItemClick);
             // 
             // M01050101
             // 
@@ -403,6 +404,7 @@ namespace School_Management.Manager.Student
             this.Name = "Manager_Student";
             this.Ribbon = this.ribbon;
             this.StatusBar = this.ribbonStatusBar;
+            this.Text = "Manager Student ";
             this.Load += new System.EventHandler(this.Manager_Student_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid_Student)).EndInit();

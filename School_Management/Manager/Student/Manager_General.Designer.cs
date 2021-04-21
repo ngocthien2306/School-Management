@@ -132,7 +132,7 @@ namespace School_Management.Manager.Student
             this.repositoryItemTextEdit2,
             this.repositoryItemTimeEdit1,
             this.repositoryItemTextEdit3});
-            this.ribbonControl1.Size = new System.Drawing.Size(1136, 141);
+            this.ribbonControl1.Size = new System.Drawing.Size(1136, 143);
             // 
             // Add_bt
             // 
@@ -177,6 +177,7 @@ namespace School_Management.Manager.Student
             this.Exit_bt.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Exit_bt.ImageOptions.Image")));
             this.Exit_bt.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("Exit_bt.ImageOptions.LargeImage")));
             this.Exit_bt.Name = "Exit_bt";
+            this.Exit_bt.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Exit_bt_ItemClick);
             // 
             // Reload_Grid
             // 
@@ -500,11 +501,11 @@ namespace School_Management.Manager.Student
             // 
             // Key_Find
             // 
-            this.Key_Find.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Key_Find.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Key_Find.Appearance.Options.UseFont = true;
             this.Key_Find.Location = new System.Drawing.Point(587, 74);
             this.Key_Find.Name = "Key_Find";
-            this.Key_Find.Size = new System.Drawing.Size(61, 19);
+            this.Key_Find.Size = new System.Drawing.Size(56, 18);
             this.Key_Find.TabIndex = 21;
             this.Key_Find.Text = "Keyword";
             // 
@@ -547,6 +548,7 @@ namespace School_Management.Manager.Student
             this.Controls.Add(this.DataSource_Student);
             this.Controls.Add(this.ribbonControl1);
             this.Name = "Manager_General";
+            this.Ribbon = this.ribbonControl1;
             this.Text = "General Manager";
             this.Load += new System.EventHandler(this.Manager_General_Load);
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemMemoEdit2)).EndInit();

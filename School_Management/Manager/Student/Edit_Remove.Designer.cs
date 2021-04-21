@@ -29,6 +29,7 @@ namespace School_Management.Manager.Student
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Edit_Remove));
             this.Lastname = new DevExpress.XtraEditors.TextEdit();
             this.Firstname = new DevExpress.XtraEditors.TextEdit();
@@ -56,6 +57,7 @@ namespace School_Management.Manager.Student
             this.Email_lb = new DevExpress.XtraEditors.LabelControl();
             this.Find_bt = new DevExpress.XtraEditors.SimpleButton();
             this.Ribbon_Control = new DevExpress.XtraBars.Ribbon.RibbonControl();
+            this.applicationMenu1 = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
             this.Save_bt = new DevExpress.XtraBars.BarButtonItem();
             this.Save_close = new DevExpress.XtraBars.BarButtonItem();
             this.Save_new = new DevExpress.XtraBars.BarButtonItem();
@@ -80,6 +82,7 @@ namespace School_Management.Manager.Student
             this.xtraTabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Ribbon_Control)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).BeginInit();
             this.SuspendLayout();
             // 
             // Lastname
@@ -304,6 +307,7 @@ namespace School_Management.Manager.Student
             // 
             // Ribbon_Control
             // 
+            this.Ribbon_Control.ApplicationButtonDropDownControl = this.applicationMenu1;
             this.Ribbon_Control.ExpandCollapseItem.Id = 0;
             this.Ribbon_Control.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.Ribbon_Control.ExpandCollapseItem,
@@ -319,7 +323,12 @@ namespace School_Management.Manager.Student
             this.Ribbon_Control.Name = "Ribbon_Control";
             this.Ribbon_Control.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.Method01});
-            this.Ribbon_Control.Size = new System.Drawing.Size(790, 141);
+            this.Ribbon_Control.Size = new System.Drawing.Size(790, 143);
+            // 
+            // applicationMenu1
+            // 
+            this.applicationMenu1.Name = "applicationMenu1";
+            this.applicationMenu1.Ribbon = this.Ribbon_Control;
             // 
             // Save_bt
             // 
@@ -398,7 +407,6 @@ namespace School_Management.Manager.Student
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(790, 429);
-            this.Controls.Add(this.Ribbon_Control);
             this.Controls.Add(this.Find_bt);
             this.Controls.Add(this.GroupPage);
             this.Controls.Add(this.windowsUIButtonPanel1);
@@ -411,7 +419,9 @@ namespace School_Management.Manager.Student
             this.Controls.Add(this.Lname_lb);
             this.Controls.Add(this.Fname_lb);
             this.Controls.Add(this.IdStudent_lb);
+            this.Controls.Add(this.Ribbon_Control);
             this.Name = "Edit_Remove";
+            this.Ribbon = this.Ribbon_Control;
             this.Text = "Edit Remove";
             ((System.ComponentModel.ISupportInitialize)(this.Lastname.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Firstname.Properties)).EndInit();
@@ -431,6 +441,7 @@ namespace School_Management.Manager.Student
             this.xtraTabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Ribbon_Control)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -461,7 +472,6 @@ namespace School_Management.Manager.Student
         public DevExpress.XtraEditors.CheckEdit Check_male;
         public DevExpress.XtraEditors.TextEdit Address_student;
         public DevExpress.XtraEditors.TextEdit Phone_student;
-        private DevExpress.XtraEditors.SimpleButton Find_bt;
         private DevExpress.XtraBars.Ribbon.RibbonControl Ribbon_Control;
         private DevExpress.XtraBars.BarButtonItem Save_bt;
         private DevExpress.XtraBars.BarButtonItem Save_close;
@@ -471,5 +481,7 @@ namespace School_Management.Manager.Student
         private DevExpress.XtraBars.BarButtonItem Close_bt;
         private DevExpress.XtraBars.Ribbon.RibbonPage Method01;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup Method0101;
+        private DevExpress.XtraBars.Ribbon.ApplicationMenu applicationMenu1;
+        public DevExpress.XtraEditors.SimpleButton Find_bt;
     }
 }

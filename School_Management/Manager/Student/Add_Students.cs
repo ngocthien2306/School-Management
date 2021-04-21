@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace School_Management.Manager.Student
 {
-    public partial class Add_Students : DevExpress.XtraEditors.XtraForm
+    public partial class Add_Students : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         public Add_Students()
         {

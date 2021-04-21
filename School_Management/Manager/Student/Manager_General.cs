@@ -69,20 +69,46 @@ namespace School_Management.Manager.Student
 
         private void Edit_bt_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Edit_Remove edit = new Edit_Remove();
-            edit.ID_student.Text = ID_student.Text;
-            edit.Firstname.Text = Firstname.Text;
-            edit.Lastname.Text = Lastname.Text;
-            edit.Birthday_picker.DateTime = Birthday_picker.DateTime;
-            edit.Phone_student.Text = Phone_student.Text;
-            edit.Address_student.Text = Address_student.Text;
-            edit.Check_male.Text = "Male";
-            if(edit.Check_male.Checked)
+            try
             {
-                edit.Check_female.Text = "Female";
+                My_Database data = new My_Database();
+
+                SqlCommand command = new SqlCommand("UPDATE Add_Student SET firstname = @Fname, lastname = @Lname, birthday = @Bdate, gender = @Gender, address = @Address, phone = @Phone, picture = @Picture WHERE id = @ID", data.GetConnection);
+                command.Parameters.Add("@Fname", SqlDbType.NVarChar).Value = Firstname.Text;
+                command.Parameters.Add("@Lname", SqlDbType.NVarChar).Value = Lastname.Text;
+                command.Parameters.Add("@Bdate", SqlDbType.DateTime).Value = Birthday_picker.DateTime;
+                command.Parameters.Add("@Address", SqlDbType.NVarChar).Value = Address_student.Text;
+                command.Parameters.Add("@Phone", SqlDbType.NVarChar).Value = Phone_student.Text;
+                ImageConverter converter = new ImageConverter();
+                byte[] image = (byte[])converter.ConvertTo(Picture_Student.Image, typeof(byte[]));
+                command.Parameters.Add("@Picture", SqlDbType.Image).Value = image;
+                command.Parameters.Add("@ID", SqlDbType.Int).Value = ID_student.Text;
+                data.Openconnection();
+                if (Check_male.Checked)
+                {
+                    command.Parameters.Add("@Gender", SqlDbType.NVarChar).Value = "Male";
+                }
+                else if (Check_female.Checked)
+                {
+                    command.Parameters.Add("@Gender", SqlDbType.NVarChar).Value = "Female";
+                }
+
+                if (command.ExecuteNonQuery() == 1)
+                {
+                    MessageBox.Show("Complete", "Edit completed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("ERROR", "Edit failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                data.Closeconnection();
             }
-            edit.Picture_Student.Image = Picture_Student.Image;
-            edit.Edit();
+
+            catch (Exception E)
+            {
+                Console.WriteLine(E.Message);
+                throw;
+            }
         }
 
         private void Remove_bt_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -95,6 +121,7 @@ namespace School_Management.Manager.Student
         private void Manager_General_Load(object sender, EventArgs e)
         {
             this.ShowList();
+            this.TotalStudent();
         }
         protected bool ShowList()
         {
@@ -129,6 +156,7 @@ namespace School_Management.Manager.Student
         private void Reload_Grid_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             this.ShowList();
+            this.TotalStudent();
         }
         public bool OpenEdit()
         {
@@ -175,7 +203,12 @@ namespace School_Management.Manager.Student
                 Picture_Student.Image = Image.FromFile(open.FileName);
             }
         }
-
+        private void TotalStudent()
+        {
+            Student student = new Student();
+            double total = Convert.ToDouble(student.TotalStudent());
+            Label_Total.Text = "Total of Student " + total;
+        }
         private void Reset_bt_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             ID_student.Text = "";
@@ -217,6 +250,19 @@ namespace School_Management.Manager.Student
         private void Check_female_CheckedChanged(object sender, EventArgs e)
         {
             Check_male.Checked = false;
+        }
+
+        private void Exit_bt_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            DialogResult exit = MessageBox.Show("Do you want to close program?", "Close Program", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (exit == DialogResult.Yes)
+            {
+                this.Hide();
+            }
+            else
+            {
+
+            }
         }
     }
 }

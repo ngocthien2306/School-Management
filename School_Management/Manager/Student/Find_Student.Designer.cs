@@ -72,7 +72,7 @@ namespace School_Management.Manager.Student
             this.Controls.Add(this.Keyword_text);
             this.Controls.Add(this.Find_bt);
             this.Name = "Find_Student";
-            this.Text = "7";
+            this.Text = "Find by ID";
             ((System.ComponentModel.ISupportInitialize)(this.Keyword_text.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

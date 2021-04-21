@@ -53,8 +53,10 @@ namespace School_Management.Manager.Student
             this.Check_all = new DevExpress.XtraEditors.CheckEdit();
             this.printDocument = new System.Drawing.Printing.PrintDocument();
             this.TabControl1 = new DevExpress.XtraTab.XtraTabControl();
-            this.TabPage1 = new DevExpress.XtraTab.XtraTabPage();
             this.TabPage2 = new DevExpress.XtraTab.XtraTabPage();
+            this.Print_Excel = new DevExpress.XtraEditors.SimpleButton();
+            this.Print_pdf = new DevExpress.XtraEditors.SimpleButton();
+            this.TabPage1 = new DevExpress.XtraTab.XtraTabPage();
             this.And_lb = new DevExpress.XtraEditors.LabelControl();
             this.Day2 = new DevExpress.XtraEditors.DateEdit();
             this.Day1 = new DevExpress.XtraEditors.DateEdit();
@@ -62,8 +64,6 @@ namespace School_Management.Manager.Student
             this.Range_Day = new DevExpress.XtraEditors.LabelControl();
             this.No_Check = new DevExpress.XtraEditors.CheckEdit();
             this.Yes_Check = new DevExpress.XtraEditors.CheckEdit();
-            this.Print_pdf = new DevExpress.XtraEditors.SimpleButton();
-            this.Print_Excel = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataSource_Student)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.addStudentBindingSource)).BeginInit();
@@ -73,8 +73,8 @@ namespace School_Management.Manager.Student
             ((System.ComponentModel.ISupportInitialize)(this.Check_all.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TabControl1)).BeginInit();
             this.TabControl1.SuspendLayout();
-            this.TabPage1.SuspendLayout();
             this.TabPage2.SuspendLayout();
+            this.TabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Day2.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Day2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Day1.Properties.CalendarTimeProperties)).BeginInit();
@@ -240,6 +240,31 @@ namespace School_Management.Manager.Student
             this.TabPage1,
             this.TabPage2});
             // 
+            // TabPage2
+            // 
+            this.TabPage2.Controls.Add(this.Print_Excel);
+            this.TabPage2.Controls.Add(this.Print_pdf);
+            this.TabPage2.Controls.Add(this.Print_bt);
+            this.TabPage2.Name = "TabPage2";
+            this.TabPage2.Size = new System.Drawing.Size(840, 69);
+            this.TabPage2.Text = "Printer";
+            // 
+            // Print_Excel
+            // 
+            this.Print_Excel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Print_Excel.ImageOptions.Image")));
+            this.Print_Excel.Location = new System.Drawing.Point(268, 3);
+            this.Print_Excel.Name = "Print_Excel";
+            this.Print_Excel.Size = new System.Drawing.Size(43, 52);
+            this.Print_Excel.TabIndex = 7;
+            // 
+            // Print_pdf
+            // 
+            this.Print_pdf.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Print_pdf.ImageOptions.Image")));
+            this.Print_pdf.Location = new System.Drawing.Point(158, 3);
+            this.Print_pdf.Name = "Print_pdf";
+            this.Print_pdf.Size = new System.Drawing.Size(45, 52);
+            this.Print_pdf.TabIndex = 6;
+            // 
             // TabPage1
             // 
             this.TabPage1.Controls.Add(this.And_lb);
@@ -256,15 +281,6 @@ namespace School_Management.Manager.Student
             this.TabPage1.Name = "TabPage1";
             this.TabPage1.Size = new System.Drawing.Size(840, 69);
             this.TabPage1.Text = "Filter";
-            // 
-            // TabPage2
-            // 
-            this.TabPage2.Controls.Add(this.Print_Excel);
-            this.TabPage2.Controls.Add(this.Print_pdf);
-            this.TabPage2.Controls.Add(this.Print_bt);
-            this.TabPage2.Name = "TabPage2";
-            this.TabPage2.Size = new System.Drawing.Size(840, 69);
-            this.TabPage2.Text = "Printer";
             // 
             // And_lb
             // 
@@ -299,10 +315,11 @@ namespace School_Management.Manager.Student
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.Day1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.Day1.Properties.MaxValue = new System.DateTime(2022, 12, 31, 23, 59, 0, 0);
+            this.Day1.Properties.MaxValue = new System.DateTime(2022, 12, 31, 0, 0, 0, 0);
             this.Day1.Properties.MinValue = new System.DateTime(1930, 1, 1, 0, 0, 0, 0);
             this.Day1.Size = new System.Drawing.Size(114, 20);
             this.Day1.TabIndex = 12;
+            this.Day1.EditValueChanged += new System.EventHandler(this.Day1_EditValueChanged);
             // 
             // Between_lb
             // 
@@ -336,22 +353,6 @@ namespace School_Management.Manager.Student
             this.Yes_Check.Size = new System.Drawing.Size(75, 19);
             this.Yes_Check.TabIndex = 8;
             // 
-            // Print_pdf
-            // 
-            this.Print_pdf.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Print_word.ImageOptions.Image")));
-            this.Print_pdf.Location = new System.Drawing.Point(158, 3);
-            this.Print_pdf.Name = "Print_pdf";
-            this.Print_pdf.Size = new System.Drawing.Size(45, 52);
-            this.Print_pdf.TabIndex = 6;
-            // 
-            // Print_Excel
-            // 
-            this.Print_Excel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Print_Excel.ImageOptions.Image")));
-            this.Print_Excel.Location = new System.Drawing.Point(268, 3);
-            this.Print_Excel.Name = "Print_Excel";
-            this.Print_Excel.Size = new System.Drawing.Size(43, 52);
-            this.Print_Excel.TabIndex = 7;
-            // 
             // Print_List_Student
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -371,9 +372,9 @@ namespace School_Management.Manager.Student
             ((System.ComponentModel.ISupportInitialize)(this.Check_all.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TabControl1)).EndInit();
             this.TabControl1.ResumeLayout(false);
+            this.TabPage2.ResumeLayout(false);
             this.TabPage1.ResumeLayout(false);
             this.TabPage1.PerformLayout();
-            this.TabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Day2.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Day2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Day1.Properties.CalendarTimeProperties)).EndInit();

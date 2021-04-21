@@ -22,6 +22,14 @@ namespace School_Management.Manager.Student
         {
             Edit_Remove edit = new Edit_Remove();
             edit.ID_student.Text = Keyword_text.Text;
+            if(edit.Check_male.Text == "Male")
+            {
+                edit.Check_male.Checked = true;
+            }
+            else
+            {
+                edit.Check_female.Checked = true;
+            }
             if (edit.Find())
             {
                 edit.Show();
