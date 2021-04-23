@@ -20,12 +20,12 @@ namespace School_Management.Manager.Login
         }
         My_Database connect = new My_Database();
 
-        private void Login_bt_Click(object sender, EventArgs e)
+        private void Login_bt_Click_1(object sender, EventArgs e)
         {
             try
             {
-                string user = User_text.Text;
-                string pass = Password_text.Text;
+                string user = User_tb.Text;
+                string pass = Pass_tb.Text;
                 Users users = new Users();
                 if (users.Login(user, pass))
                 {
@@ -37,14 +37,23 @@ namespace School_Management.Manager.Login
                 else
                 {
                     MessageBox.Show("Login failed, your name or pass incorrect!", "Login", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    User_text.Text = "";
-                    Password_text.Text = "";
+                    User_tb.Text = "";
+                    Pass_tb.Text = "";
                 }
             }
             catch (Exception)
             {
                 MessageBox.Show("Error", "Login", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void User_tb_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Pass_tb_EditValueChanged(object sender, EventArgs e)
+        {
         }
     }
 }

@@ -117,14 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="Add_StudentTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>401, 17</value>
+  <metadata name="Manager_StudentDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
   </metadata>
   <metadata name="AddStudentBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>207, 17</value>
   </metadata>
-  <metadata name="Manager_StudentDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
+  <metadata name="Add_StudentTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>401, 17</value>
   </metadata>
   <metadata name="BarManager.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>594, 17</value>
@@ -1659,6 +1659,16 @@
         rkJggg==
 </value>
   </data>
+  <data name="createRotatedFullStackedBarChartItem1.Description" xml:space="preserve">
+    <value>Compare the percentage each value contributes to a total across categories using horizontal rectangles.
+
+Use it when the values on the chart represent durations or when the category text is very long.</value>
+  </data>
+  <data name="createRotatedFullStackedBarChartItem1.Hint" xml:space="preserve">
+    <value>Compare the percentage each value contributes to a total across categories using horizontal rectangles.
+
+Use it when the values on the chart represent durations or when the category text is very long.</value>
+  </data>
   <data name="resource.Image46" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -2054,6 +2064,16 @@
         8Xg8FotFo9HGxkYMTDgcDoVCW7ZsaWho2Lx580asjRv/BXA/ckUZNWsyAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="createArea3DChartItem1.Description" xml:space="preserve">
+    <value>Displays data as filled areas on a diagram, with each data point displayed as a peak or hollow in the area.
+
+Use it when you need to show trends for several series on the same diagram, and also show the relationship of the parts to the whole.</value>
+  </data>
+  <data name="createArea3DChartItem1.Hint" xml:space="preserve">
+    <value>Displays data as filled areas on a diagram, with each data point displayed as a peak or hollow in the area.
+
+Use it when you need to show trends for several series on the same diagram, and also show the relationship of the parts to the whole.</value>
+  </data>
   <data name="resource.Image59" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -2083,6 +2103,16 @@
         Ug4ePHjgwIHk5OR9+/bhP5WQkBCPv4lCERcXFxsbu2vXLrlcLpPJoqOjcYIiIiIkEolYLBaJREKhEA3D
         5/N5PF5QUFBgYGBAQMA2jG3b/gJnSHEUpBRl7gAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="createFullStackedArea3DChartItem1.Description" xml:space="preserve">
+    <value>Displays data as areas on a diagram, so that the value of each data point is stacked with all the other corresponding data points' values.
+
+Use it for comparing the percentage values of several series for the same point arguments.</value>
+  </data>
+  <data name="createFullStackedArea3DChartItem1.Hint" xml:space="preserve">
+    <value>Displays data as areas on a diagram, so that the value of each data point is stacked with all the other corresponding data points' values.
+
+Use it for comparing the percentage values of several series for the same point arguments.</value>
   </data>
   <data name="resource.Image60" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2322,6 +2352,16 @@
         RK5CYII=
 </value>
   </data>
+  <data name="createFunnelChartItem1.Description" xml:space="preserve">
+    <value>Displays a wide area at the top, indicating the total points' value, while other areas are proportionally smaller.
+
+Use it when it is necessary to represent stages in a sales process, show the amount of potential revenue for each stage, as well as identify potential problem areas in an organization's sales processes.</value>
+  </data>
+  <data name="createFunnelChartItem1.Hint" xml:space="preserve">
+    <value>Displays a wide area at the top, indicating the total points' value, while other areas are proportionally smaller.
+
+Use it when it is necessary to represent stages in a sales process, show the amount of potential revenue for each stage, as well as identify potential problem areas in an organization's sales processes.</value>
+  </data>
   <data name="resource.Image68" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -2350,6 +2390,16 @@
         5eXlO3bsgHeqtLR0O7wmEolYLC4qKiooKBCJRPn5+Xl5ebBBOTk5QqEwOztbIBBkZGTAhUlLS0tNTU1O
         Tk5KSkpMTIyHiY//D/vOZwZwpxfCAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="createFunnel3DChartItem1.Description" xml:space="preserve">
+    <value>Displays a wide area at the top, indicating the total points' value, while other areas are proportionally smaller.
+
+Use it when it is necessary to represent stages in a sales process, show the amount of potential revenue for each stage, as well as identify potential problem areas in an organization's sales processes.</value>
+  </data>
+  <data name="createFunnel3DChartItem1.Hint" xml:space="preserve">
+    <value>Displays a wide area at the top, indicating the total points' value, while other areas are proportionally smaller.
+
+Use it when it is necessary to represent stages in a sales process, show the amount of potential revenue for each stage, as well as identify potential problem areas in an organization's sales processes.</value>
   </data>
   <data name="resource.Image69" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2383,6 +2433,12 @@
         dXWlUqkUCoVMJsOFIZFI9vb2tra2NjY2VlZWFjAWFn8DUAdGXJFTE3UAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="createStockChartItem1.Description" xml:space="preserve">
+    <value>Show variation in stock prices over the course of a day. The Open and Close prices are represented by left and right lines on each point, and the Low and High prices are represented by the bottom and top values of the vertical line which is shown at each point.</value>
+  </data>
+  <data name="createStockChartItem1.Hint" xml:space="preserve">
+    <value>Show variation in stock prices over the course of a day. The Open and Close prices are represented by left and right lines on each point, and the Low and High prices are represented by the bottom and top values of the vertical line which is shown at each point.</value>
+  </data>
   <data name="resource.Image70" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -2404,6 +2460,12 @@
         KCsvLy0tLS4uLioqKiwsNJvNBQUF+D+Vl5eXi/8mOTnZ2dlZWVkZGRkmkyk9PT0tLQ2/oJSUlOTk5KSk
         JKPRmJiYiAsTHx8fFxcXExNjMBiio6MjUZGRvwErw9lrkR9XegAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="createCandleStickChartItem1.Description" xml:space="preserve">
+    <value>Show the variation in the price of stock over the course of a day. The Open and Close prices are represented by a filled rectangle, and the Low and High prices are represented by the bottom and top values of the vertical line which is shown at each point.</value>
+  </data>
+  <data name="createCandleStickChartItem1.Hint" xml:space="preserve">
+    <value>Show the variation in the price of stock over the course of a day. The Open and Close prices are represented by a filled rectangle, and the Low and High prices are represented by the bottom and top values of the vertical line which is shown at each point.</value>
   </data>
   <data name="resource.Image71" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2527,6 +2589,12 @@
         MBAdJBAIeDwel8vlcDhsNhuC8fX1ZbFY3t7eXl5eR44c8YB5ePwJwtxKwg6AzAUAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="createRadarRangeAreaChartItem1.Description" xml:space="preserve">
+    <value>Displays series on a circular diagram on the basis of angles as filled areas, defined by data points with two values that are minimum and maximum limits. Use it when you need to accentuate the delta between the start and end values.</value>
+  </data>
+  <data name="createRadarRangeAreaChartItem1.Hint" xml:space="preserve">
+    <value>Displays series on a circular diagram on the basis of angles as filled areas, defined by data points with two values that are minimum and maximum limits. Use it when you need to accentuate the delta between the start and end values.</value>
+  </data>
   <data name="resource.Image75" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -2554,6 +2622,12 @@
         bt1GFGw5pBU3rBUBwEViYiIBs775/10EABcJCQlUe7SAi317uvbt+wvnTahfosCvMQAAAABJRU5ErkJg
         gg==
 </value>
+  </data>
+  <data name="createScatterRadarLineChartItem1.Description" xml:space="preserve">
+    <value>Displays data as a line on a circular grid that has multiple axis along which data can be plotted. The series points are drawn in the circular grid in the same order that they have in the series point collection.</value>
+  </data>
+  <data name="createScatterRadarLineChartItem1.Hint" xml:space="preserve">
+    <value>Displays data as a line on a circular grid that has multiple axis along which data can be plotted. The series points are drawn in the circular grid in the same order that they have in the series point collection.</value>
   </data>
   <data name="resource.Image76" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2688,6 +2762,12 @@
         gphMZkBAAIPBoNPpIIyPj4+3t7enp6eHh8exY8eOQo4e/RNDdBrLdUVuJgAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="createPolarRangeAreaChartItem1.Description" xml:space="preserve">
+    <value>Displays series on a circular diagram as filled areas, defined by data points with two values that are minimum and maximum limits. Use it when you need to accentuate the delta between the start and end values.</value>
+  </data>
+  <data name="createPolarRangeAreaChartItem1.Hint" xml:space="preserve">
+    <value>Displays series on a circular diagram as filled areas, defined by data points with two values that are minimum and maximum limits. Use it when you need to accentuate the delta between the start and end values.</value>
+  </data>
   <data name="resource.Image80" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -2718,6 +2798,12 @@
         GB0dV6pUHR2dumd6LMi02zP3IgAAEtyiiCkIINvTyAQAMCdxcXEAzAdC/xbWSZtePyhXKHA88PkCAJDg
         FkVM7RHTAQDMSWxsLAAv5oP/ewAAc3LgwAFk+zRgTmL2dcTE/AlFgZRamfjxjgAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="createScatterPolarLineChartItem1.Description" xml:space="preserve">
+    <value>Show trends for several series and compare their values for the same point arguments on a circular diagram on the basis of angles. The series points are drawn in the circular grid in the same order that they have in the series point collection.</value>
+  </data>
+  <data name="createScatterPolarLineChartItem1.Hint" xml:space="preserve">
+    <value>Show trends for several series and compare their values for the same point arguments on a circular diagram on the basis of angles. The series points are drawn in the circular grid in the same order that they have in the series point collection.</value>
   </data>
   <data name="resource.Image81" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2810,6 +2896,16 @@
         jx49jDh8+E8esENfmlYNgAAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="createRangeAreaChartItem1.Description" xml:space="preserve">
+    <value>Displays series as filled areas on a diagram, defined by data points with two values that are minimum and maximum limits.
+
+Use it when you need to accentuate the delta between the start and end values.</value>
+  </data>
+  <data name="createRangeAreaChartItem1.Hint" xml:space="preserve">
+    <value>Displays series as filled areas on a diagram, defined by data points with two values that are minimum and maximum limits.
+
+Use it when you need to accentuate the delta between the start and end values.</value>
+  </data>
   <data name="resource.Image84" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -2843,6 +2939,16 @@
         MaeqqqoqKysrKirKy8vLyspKS0sPHjxYUlJy4MABvKD9+/cXFRVZrVaLxVJQUIALk5eXl5OTs3v37qys
         rMzMzAysjIx/AaDHW+yztZHMAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="createRangeArea3DChartItem1.Description" xml:space="preserve">
+    <value>Displays series as filled areas on a diagram, defined by data points with two values that are minimum and maximum limits.
+
+Use it when you need to accentuate the delta between the start and end values.</value>
+  </data>
+  <data name="createRangeArea3DChartItem1.Hint" xml:space="preserve">
+    <value>Displays series as filled areas on a diagram, defined by data points with two values that are minimum and maximum limits.
+
+Use it when you need to accentuate the delta between the start and end values.</value>
   </data>
   <data name="resource.Image85" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2904,6 +3010,16 @@
         XlJSUmJiYkJCQnx8PHxBsbGx0dHRUVFRXC43MjISBobD4YSHh4eGhoaEhAQHBwdCBAb+A0wlDqBB6Qxc
         AAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="createSideBySideGanttChartItem1.Description" xml:space="preserve">
+    <value>Displays horizontal bars along the time axis. Each bar represents a separate event with the start and end values, hence these charts are used to track different activities during the time frame.
+
+Use it when it's necessary to show activity bars from different series one above another, to compare their duration.</value>
+  </data>
+  <data name="createSideBySideGanttChartItem1.Hint" xml:space="preserve">
+    <value>Displays horizontal bars along the time axis. Each bar represents a separate event with the start and end values, hence these charts are used to track different activities during the time frame.
+
+Use it when it's necessary to show activity bars from different series one above another, to compare their duration.</value>
   </data>
   <data name="resource.Image87" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

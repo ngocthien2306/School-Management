@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace School_Management.Manager.Student
 {
@@ -35,10 +36,20 @@ namespace School_Management.Manager.Student
         }
         private void DrawPieChart(double value1, double value2)
         {
-            ChartControl.Series.Clear();
-            string series ="";
-            ChartControl.Series[series].Points.AddPoint("Male", value1);
-            ChartControl.Series[series].Points.AddPoint("Female", value2);
+            Chart.Series.Clear();
+            Chart.Legends.Clear();
+            Chart.Legends.Add("MyLegend");
+            Chart.Legends[0].LegendStyle = LegendStyle.Table;
+            Chart.Legends[0].Docking = Docking.Bottom;
+            Chart.Legends[0].Alignment = StringAlignment.Center;
+            Chart.Legends[0].Title = "Gender";
+            Chart.Legends[0].BorderColor = Color.Black;
+            string seriesname = "Gender";
+            Chart.Series.Add(seriesname);
+            Chart.Series[seriesname].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            Chart.Series[seriesname].Points.AddXY("Male", value1);
+            Chart.Series[seriesname].Points.AddXY("Female", value2);
+
         }
     }
 }

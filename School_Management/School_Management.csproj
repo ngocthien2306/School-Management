@@ -88,6 +88,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -99,6 +100,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Manager\Course\Course.cs" />
     <Compile Include="Manager\Login\Login Account.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -271,7 +273,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Manager\Course\" />
     <Folder Include="Manager\Score\" />
   </ItemGroup>
   <ItemGroup>
@@ -286,6 +287,8 @@
       <DependentUpon>Model_School.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Content Include="Resources\download.png" />
+    <None Include="Resources\download1.png" />
     <Content Include="Resource\School123.jpg" />
   </ItemGroup>
   <ItemGroup>
