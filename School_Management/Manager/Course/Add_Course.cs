@@ -17,32 +17,39 @@ namespace School_Management.Manager.Course
         {
             InitializeComponent();
         }
-
-        private void accordionControlElement2_Click(object sender, EventArgs e)
+        private bool check()
         {
-            Courses course = new Courses();
-            course.Id = Convert.ToInt32(ID_Course_tb.Text);
-            course.Label = NameCourse_tb.Text;
-            course.Period = Convert.ToInt32(Period_tb.Text);
-            course.Description = Description_tb.Text;
-            if (course.AddThisCourse())
+            if(ID_Course_tb.Text.Trim() == "" || NameCourse_tb.Text.Trim() == "" || Period_tb.Text.Trim() == "" || Description.Text.Trim() == "")
             {
-                MessageBox.Show("Add a new course successful!", "Add Course", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return true;
             }
             else
             {
-                MessageBox.Show("Add failed", "Add Course", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
             }
         }
-
-        private void accordionControlElement2_Click_1(object sender, EventArgs e)
+        private void Save_Course_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void Description_tb_EditValueChanged(object sender, EventArgs e)
-        {
-
+            if(this.check())
+            {
+                MessageBox.Show("The textbox cannot accept blank! Please enter again", "Add Course", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                Courses course = new Courses();
+                course.Id = Convert.ToInt32(ID_Course_tb.Text);
+                course.Label = NameCourse_tb.Text;
+                course.Period = Convert.ToInt32(Period_tb.Text);
+                course.Description = Description.Text;
+                if (course.AddThisCourse())
+                {
+                    MessageBox.Show("Add a new course successful!", "Add Course", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Add failed", "Add Course", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
         }
     }
 }

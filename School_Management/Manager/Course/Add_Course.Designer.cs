@@ -54,33 +54,34 @@ namespace School_Management.Manager.Course
             this.fluentDesignFormContainer1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
             this.Save = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.Save_Course = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.Save_and_Close = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.Reset = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.Delete = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.Close_program = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
-            this.accordionControlElement2 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement3 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement4 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement5 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
             this.tabFormContentContainer1 = new DevExpress.XtraBars.TabFormContentContainer();
-            this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
-            this.Name_lb = new DevExpress.XtraEditors.LabelControl();
+            this.Description = new System.Windows.Forms.RichTextBox();
             this.ID_coures_lb = new DevExpress.XtraEditors.LabelControl();
-            this.Period_lb = new DevExpress.XtraEditors.LabelControl();
-            this.Desc_lb = new DevExpress.XtraEditors.LabelControl();
-            this.ID_Course_tb = new DevExpress.XtraEditors.TextEdit();
-            this.NameCourse_tb = new DevExpress.XtraEditors.TextEdit();
             this.Period_tb = new DevExpress.XtraEditors.TextEdit();
+            this.Name_lb = new DevExpress.XtraEditors.LabelControl();
+            this.NameCourse_tb = new DevExpress.XtraEditors.TextEdit();
+            this.Period_lb = new DevExpress.XtraEditors.LabelControl();
+            this.ID_Course_tb = new DevExpress.XtraEditors.TextEdit();
+            this.Desc_lb = new DevExpress.XtraEditors.LabelControl();
+            this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.toolbarFormManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
             this.xtraTabPage1.SuspendLayout();
             this.tabFormContentContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Period_tb.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NameCourse_tb.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ID_Course_tb.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ID_Course_tb.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NameCourse_tb.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Period_tb.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // barManager1
@@ -269,15 +270,50 @@ namespace School_Management.Manager.Course
             // Save
             // 
             this.Save.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlElement1,
-            this.accordionControlElement2,
-            this.accordionControlElement3,
-            this.accordionControlElement4,
-            this.accordionControlElement5});
+            this.Save_Course,
+            this.Save_and_Close,
+            this.Reset,
+            this.Delete,
+            this.Close_program});
             this.Save.Expanded = true;
             this.Save.Name = "Save";
             this.Save.Text = "Save";
-            this.Save.Click += new System.EventHandler(this.accordionControlElement2_Click);
+            // 
+            // Save_Course
+            // 
+            this.Save_Course.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Save_Course.ImageOptions.Image")));
+            this.Save_Course.Name = "Save_Course";
+            this.Save_Course.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.Save_Course.Text = "Save Course";
+            this.Save_Course.Click += new System.EventHandler(this.Save_Course_Click);
+            // 
+            // Save_and_Close
+            // 
+            this.Save_and_Close.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Save_and_Close.ImageOptions.Image")));
+            this.Save_and_Close.Name = "Save_and_Close";
+            this.Save_and_Close.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.Save_and_Close.Text = "Save and Close";
+            // 
+            // Reset
+            // 
+            this.Reset.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Reset.ImageOptions.Image")));
+            this.Reset.Name = "Reset";
+            this.Reset.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.Reset.Text = "Reset Change";
+            // 
+            // Delete
+            // 
+            this.Delete.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Delete.ImageOptions.Image")));
+            this.Delete.Name = "Delete";
+            this.Delete.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.Delete.Text = "Delete";
+            // 
+            // Close_program
+            // 
+            this.Close_program.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Close_program.ImageOptions.Image")));
+            this.Close_program.Name = "Close_program";
+            this.Close_program.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.Close_program.Text = "Close";
             // 
             // fluentDesignFormControl1
             // 
@@ -288,42 +324,6 @@ namespace School_Management.Manager.Course
             this.fluentDesignFormControl1.TabIndex = 25;
             this.fluentDesignFormControl1.TabStop = false;
             // 
-            // accordionControlElement2
-            // 
-            this.accordionControlElement2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement2.ImageOptions.Image")));
-            this.accordionControlElement2.Name = "accordionControlElement2";
-            this.accordionControlElement2.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement2.Text = "Save and Close";
-            this.accordionControlElement2.Click += new System.EventHandler(this.accordionControlElement2_Click_1);
-            // 
-            // accordionControlElement3
-            // 
-            this.accordionControlElement3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement3.ImageOptions.Image")));
-            this.accordionControlElement3.Name = "accordionControlElement3";
-            this.accordionControlElement3.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement3.Text = "Reset Change";
-            // 
-            // accordionControlElement4
-            // 
-            this.accordionControlElement4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement4.ImageOptions.Image")));
-            this.accordionControlElement4.Name = "accordionControlElement4";
-            this.accordionControlElement4.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement4.Text = "Delete";
-            // 
-            // accordionControlElement5
-            // 
-            this.accordionControlElement5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement5.ImageOptions.Image")));
-            this.accordionControlElement5.Name = "accordionControlElement5";
-            this.accordionControlElement5.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement5.Text = "Close";
-            // 
-            // accordionControlElement1
-            // 
-            this.accordionControlElement1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement1.ImageOptions.Image")));
-            this.accordionControlElement1.Name = "accordionControlElement1";
-            this.accordionControlElement1.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement1.Text = "Save Course";
-            // 
             // xtraTabPage1
             // 
             this.xtraTabPage1.Controls.Add(this.tabFormContentContainer1);
@@ -332,6 +332,7 @@ namespace School_Management.Manager.Course
             // 
             // tabFormContentContainer1
             // 
+            this.tabFormContentContainer1.Controls.Add(this.Description);
             this.tabFormContentContainer1.Controls.Add(this.ID_coures_lb);
             this.tabFormContentContainer1.Controls.Add(this.Period_tb);
             this.tabFormContentContainer1.Controls.Add(this.Name_lb);
@@ -344,6 +345,84 @@ namespace School_Management.Manager.Course
             this.tabFormContentContainer1.Size = new System.Drawing.Size(490, 353);
             this.tabFormContentContainer1.TabIndex = 10;
             // 
+            // Description
+            // 
+            this.Description.Location = new System.Drawing.Point(107, 191);
+            this.Description.Name = "Description";
+            this.Description.Size = new System.Drawing.Size(368, 129);
+            this.Description.TabIndex = 7;
+            this.Description.Text = "";
+            // 
+            // ID_coures_lb
+            // 
+            this.ID_coures_lb.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ID_coures_lb.Appearance.Options.UseFont = true;
+            this.ID_coures_lb.Location = new System.Drawing.Point(3, 35);
+            this.ID_coures_lb.Name = "ID_coures_lb";
+            this.ID_coures_lb.Size = new System.Drawing.Size(56, 16);
+            this.ID_coures_lb.TabIndex = 1;
+            this.ID_coures_lb.Text = "ID Course";
+            // 
+            // Period_tb
+            // 
+            this.Period_tb.Location = new System.Drawing.Point(105, 123);
+            this.Period_tb.MenuManager = this.barManager1;
+            this.Period_tb.Name = "Period_tb";
+            this.Period_tb.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Period_tb.Properties.Appearance.Options.UseFont = true;
+            this.Period_tb.Size = new System.Drawing.Size(368, 22);
+            this.Period_tb.TabIndex = 6;
+            // 
+            // Name_lb
+            // 
+            this.Name_lb.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Name_lb.Appearance.Options.UseFont = true;
+            this.Name_lb.Location = new System.Drawing.Point(3, 83);
+            this.Name_lb.Name = "Name_lb";
+            this.Name_lb.Size = new System.Drawing.Size(92, 16);
+            this.Name_lb.TabIndex = 0;
+            this.Name_lb.Text = "Name of Course";
+            // 
+            // NameCourse_tb
+            // 
+            this.NameCourse_tb.Location = new System.Drawing.Point(106, 77);
+            this.NameCourse_tb.MenuManager = this.barManager1;
+            this.NameCourse_tb.Name = "NameCourse_tb";
+            this.NameCourse_tb.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NameCourse_tb.Properties.Appearance.Options.UseFont = true;
+            this.NameCourse_tb.Size = new System.Drawing.Size(368, 22);
+            this.NameCourse_tb.TabIndex = 5;
+            // 
+            // Period_lb
+            // 
+            this.Period_lb.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Period_lb.Appearance.Options.UseFont = true;
+            this.Period_lb.Location = new System.Drawing.Point(3, 126);
+            this.Period_lb.Name = "Period_lb";
+            this.Period_lb.Size = new System.Drawing.Size(36, 16);
+            this.Period_lb.TabIndex = 2;
+            this.Period_lb.Text = "Period";
+            // 
+            // ID_Course_tb
+            // 
+            this.ID_Course_tb.Location = new System.Drawing.Point(105, 32);
+            this.ID_Course_tb.MenuManager = this.barManager1;
+            this.ID_Course_tb.Name = "ID_Course_tb";
+            this.ID_Course_tb.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ID_Course_tb.Properties.Appearance.Options.UseFont = true;
+            this.ID_Course_tb.Size = new System.Drawing.Size(370, 22);
+            this.ID_Course_tb.TabIndex = 4;
+            // 
+            // Desc_lb
+            // 
+            this.Desc_lb.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Desc_lb.Appearance.Options.UseFont = true;
+            this.Desc_lb.Location = new System.Drawing.Point(3, 210);
+            this.Desc_lb.Name = "Desc_lb";
+            this.Desc_lb.Size = new System.Drawing.Size(63, 16);
+            this.Desc_lb.TabIndex = 3;
+            this.Desc_lb.Text = "Description";
+            // 
             // xtraTabControl1
             // 
             this.xtraTabControl1.Location = new System.Drawing.Point(155, 27);
@@ -353,76 +432,6 @@ namespace School_Management.Manager.Course
             this.xtraTabControl1.TabIndex = 10;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage1});
-            // 
-            // Name_lb
-            // 
-            this.Name_lb.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name_lb.Appearance.Options.UseFont = true;
-            this.Name_lb.Location = new System.Drawing.Point(2, 72);
-            this.Name_lb.Name = "Name_lb";
-            this.Name_lb.Size = new System.Drawing.Size(92, 16);
-            this.Name_lb.TabIndex = 0;
-            this.Name_lb.Text = "Name of Course";
-            // 
-            // ID_coures_lb
-            // 
-            this.ID_coures_lb.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ID_coures_lb.Appearance.Options.UseFont = true;
-            this.ID_coures_lb.Location = new System.Drawing.Point(5, 27);
-            this.ID_coures_lb.Name = "ID_coures_lb";
-            this.ID_coures_lb.Size = new System.Drawing.Size(56, 16);
-            this.ID_coures_lb.TabIndex = 1;
-            this.ID_coures_lb.Text = "ID Course";
-            // 
-            // Period_lb
-            // 
-            this.Period_lb.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Period_lb.Appearance.Options.UseFont = true;
-            this.Period_lb.Location = new System.Drawing.Point(3, 118);
-            this.Period_lb.Name = "Period_lb";
-            this.Period_lb.Size = new System.Drawing.Size(36, 16);
-            this.Period_lb.TabIndex = 2;
-            this.Period_lb.Text = "Period";
-            // 
-            // Desc_lb
-            // 
-            this.Desc_lb.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Desc_lb.Appearance.Options.UseFont = true;
-            this.Desc_lb.Location = new System.Drawing.Point(3, 217);
-            this.Desc_lb.Name = "Desc_lb";
-            this.Desc_lb.Size = new System.Drawing.Size(63, 16);
-            this.Desc_lb.TabIndex = 3;
-            this.Desc_lb.Text = "Description";
-            // 
-            // ID_Course_tb
-            // 
-            this.ID_Course_tb.Location = new System.Drawing.Point(109, 24);
-            this.ID_Course_tb.MenuManager = this.barManager1;
-            this.ID_Course_tb.Name = "ID_Course_tb";
-            this.ID_Course_tb.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ID_Course_tb.Properties.Appearance.Options.UseFont = true;
-            this.ID_Course_tb.Size = new System.Drawing.Size(368, 22);
-            this.ID_Course_tb.TabIndex = 4;
-            // 
-            // NameCourse_tb
-            // 
-            this.NameCourse_tb.Location = new System.Drawing.Point(108, 69);
-            this.NameCourse_tb.MenuManager = this.barManager1;
-            this.NameCourse_tb.Name = "NameCourse_tb";
-            this.NameCourse_tb.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NameCourse_tb.Properties.Appearance.Options.UseFont = true;
-            this.NameCourse_tb.Size = new System.Drawing.Size(368, 22);
-            this.NameCourse_tb.TabIndex = 5;
-            // 
-            // Period_tb
-            // 
-            this.Period_tb.Location = new System.Drawing.Point(107, 115);
-            this.Period_tb.MenuManager = this.barManager1;
-            this.Period_tb.Name = "Period_tb";
-            this.Period_tb.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Period_tb.Properties.Appearance.Options.UseFont = true;
-            this.Period_tb.Size = new System.Drawing.Size(368, 22);
-            this.Period_tb.TabIndex = 6;
             // 
             // Add_Course
             // 
@@ -455,11 +464,11 @@ namespace School_Management.Manager.Course
             this.xtraTabPage1.ResumeLayout(false);
             this.tabFormContentContainer1.ResumeLayout(false);
             this.tabFormContentContainer1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Period_tb.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NameCourse_tb.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ID_Course_tb.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ID_Course_tb.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NameCourse_tb.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Period_tb.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -491,10 +500,10 @@ namespace School_Management.Manager.Course
         private DevExpress.XtraBars.Navigation.AccordionControl accordionControl1;
         private DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl fluentDesignFormControl1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement Save;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement5;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement3;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement4;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement2;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement Close_program;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement Reset;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement Delete;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement Save_and_Close;
         private DevExpress.XtraTab.XtraTabControl xtraTabControl1;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage1;
         private DevExpress.XtraBars.TabFormContentContainer tabFormContentContainer1;
@@ -505,6 +514,7 @@ namespace School_Management.Manager.Course
         private DevExpress.XtraEditors.LabelControl Period_lb;
         private DevExpress.XtraEditors.TextEdit ID_Course_tb;
         private DevExpress.XtraEditors.LabelControl Desc_lb;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement1;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement Save_Course;
+        private System.Windows.Forms.RichTextBox Description;
     }
 }

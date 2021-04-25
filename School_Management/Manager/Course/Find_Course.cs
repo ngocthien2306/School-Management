@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace School_Management.Manager.Course
 {
-    public partial class Edit_Course : DevExpress.XtraEditors.XtraForm
+    public partial class Find_Course : DevExpress.XtraEditors.XtraForm
     {
-        public Edit_Course()
+        public Find_Course()
         {
             InitializeComponent();
         }

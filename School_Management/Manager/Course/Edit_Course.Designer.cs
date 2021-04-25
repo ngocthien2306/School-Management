@@ -37,14 +37,18 @@ namespace School_Management.Manager.Course
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.bar1 = new DevExpress.XtraBars.Bar();
-            this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.Edit_CourselayoutControl1ConvertedLayout = new DevExpress.XtraLayout.LayoutControl();
+            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.fluentDesignFormContainer1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
+            this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
+            this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
             ((System.ComponentModel.ISupportInitialize)(this.toolbarFormManager1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Edit_CourselayoutControl1ConvertedLayout)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
             this.SuspendLayout();
             // 
             // toolbarFormManager1
@@ -105,49 +109,59 @@ namespace School_Management.Manager.Course
             this.bar1.FloatLocation = new System.Drawing.Point(14, 132);
             this.bar1.Text = "Tools";
             // 
-            // ribbonControl1
-            // 
-            this.ribbonControl1.ExpandCollapseItem.Id = 0;
-            this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.ribbonControl1.ExpandCollapseItem,
-            this.ribbonControl1.SearchEditItem});
-            this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 1;
-            this.ribbonControl1.Name = "ribbonControl1";
-            this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
-            this.ribbonPage1});
-            this.ribbonControl1.Size = new System.Drawing.Size(597, 143);
-            this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
-            // 
-            // ribbonPage1
-            // 
-            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup1,
-            this.ribbonPageGroup2});
-            this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "ribbonPage1";
-            // 
-            // ribbonPageGroup1
-            // 
-            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "ribbonPageGroup1";
-            // 
-            // ribbonPageGroup2
-            // 
-            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
-            this.ribbonPageGroup2.Text = "ribbonPageGroup2";
-            // 
             // ribbonStatusBar1
             // 
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 393);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(260, 404);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
-            this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(597, 31);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(337, 20);
             // 
             // ribbonPage2
             // 
             this.ribbonPage2.Name = "ribbonPage2";
             this.ribbonPage2.Text = "ribbonPage2";
+            // 
+            // Edit_CourselayoutControl1ConvertedLayout
+            // 
+            this.Edit_CourselayoutControl1ConvertedLayout.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Edit_CourselayoutControl1ConvertedLayout.Location = new System.Drawing.Point(260, 0);
+            this.Edit_CourselayoutControl1ConvertedLayout.Name = "Edit_CourselayoutControl1ConvertedLayout";
+            this.Edit_CourselayoutControl1ConvertedLayout.Root = this.layoutControlGroup1;
+            this.Edit_CourselayoutControl1ConvertedLayout.Size = new System.Drawing.Size(337, 424);
+            this.Edit_CourselayoutControl1ConvertedLayout.TabIndex = 6;
+            // 
+            // layoutControlGroup1
+            // 
+            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.layoutControlGroup1.GroupBordersVisible = false;
+            this.layoutControlGroup1.Name = "layoutControlGroup1";
+            this.layoutControlGroup1.Size = new System.Drawing.Size(337, 424);
+            this.layoutControlGroup1.TextVisible = false;
+            // 
+            // fluentDesignFormContainer1
+            // 
+            this.fluentDesignFormContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.fluentDesignFormContainer1.Location = new System.Drawing.Point(260, 0);
+            this.fluentDesignFormContainer1.Name = "fluentDesignFormContainer1";
+            this.fluentDesignFormContainer1.Size = new System.Drawing.Size(337, 424);
+            this.fluentDesignFormContainer1.TabIndex = 11;
+            // 
+            // accordionControl1
+            // 
+            this.accordionControl1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.accordionControl1.Location = new System.Drawing.Point(0, 0);
+            this.accordionControl1.Name = "accordionControl1";
+            this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
+            this.accordionControl1.Size = new System.Drawing.Size(260, 424);
+            this.accordionControl1.TabIndex = 12;
+            this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
+            // 
+            // fluentDesignFormControl1
+            // 
+            this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
+            this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
+            this.fluentDesignFormControl1.Size = new System.Drawing.Size(597, 0);
+            this.fluentDesignFormControl1.TabIndex = 13;
+            this.fluentDesignFormControl1.TabStop = false;
             // 
             // Edit_Course
             // 
@@ -155,17 +169,21 @@ namespace School_Management.Manager.Course
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(597, 424);
             this.Controls.Add(this.ribbonStatusBar1);
-            this.Controls.Add(this.ribbonControl1);
+            this.Controls.Add(this.Edit_CourselayoutControl1ConvertedLayout);
+            this.Controls.Add(this.fluentDesignFormContainer1);
+            this.Controls.Add(this.accordionControl1);
+            this.Controls.Add(this.fluentDesignFormControl1);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
             this.Name = "Edit_Course";
-            this.Ribbon = this.ribbonControl1;
-            this.StatusBar = this.ribbonStatusBar1;
             this.Text = "Edit_Course";
             ((System.ComponentModel.ISupportInitialize)(this.toolbarFormManager1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Edit_CourselayoutControl1ConvertedLayout)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,11 +197,12 @@ namespace School_Management.Manager.Course
         private DevExpress.XtraBars.BarDockControl barDockControlRight;
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
         private DevExpress.XtraBars.Bar bar1;
-        private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar1;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
+        private DevExpress.XtraLayout.LayoutControl Edit_CourselayoutControl1ConvertedLayout;
+        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
+        private DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer fluentDesignFormContainer1;
+        private DevExpress.XtraBars.Navigation.AccordionControl accordionControl1;
+        private DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl fluentDesignFormControl1;
     }
 }
