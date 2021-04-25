@@ -117,17 +117,23 @@
     <Compile Include="Manager\Course\Edit_Course.Designer.cs">
       <DependentUpon>Edit_Course.cs</DependentUpon>
     </Compile>
+    <Compile Include="Manager\Course\Find Course.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Course\Find Course.Designer.cs">
+      <DependentUpon>Find Course.cs</DependentUpon>
+    </Compile>
     <Compile Include="Manager\Course\ListCourse.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Manager\Course\ListCourse.Designer.cs">
       <DependentUpon>ListCourse.cs</DependentUpon>
     </Compile>
-    <Compile Include="Manager\Course\Manager Course.cs">
+    <Compile Include="Manager\Course\Manager_Course.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Manager\Course\Manager Course.Designer.cs">
-      <DependentUpon>Manager Course.cs</DependentUpon>
+    <Compile Include="Manager\Course\Manager_Course.Designer.cs">
+      <DependentUpon>Manager_Course.cs</DependentUpon>
     </Compile>
     <Compile Include="Manager\Login\Login Account.cs">
       <SubType>Form</SubType>
@@ -238,11 +244,14 @@
     <EmbeddedResource Include="Manager\Course\Edit_Course.resx">
       <DependentUpon>Edit_Course.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Course\Find Course.resx">
+      <DependentUpon>Find Course.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Manager\Course\ListCourse.resx">
       <DependentUpon>ListCourse.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Manager\Course\Manager Course.resx">
-      <DependentUpon>Manager Course.cs</DependentUpon>
+    <EmbeddedResource Include="Manager\Course\Manager_Course.resx">
+      <DependentUpon>Manager_Course.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manager\Login\Login Account.resx">
       <DependentUpon>Login Account.cs</DependentUpon>

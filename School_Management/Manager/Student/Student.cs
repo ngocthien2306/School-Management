@@ -127,7 +127,7 @@ namespace School_Management.Manager.Student
             return command.ExecuteScalar();
 
         }
-        public DataTable findByHint(string hint)
+        public DataTable FindByHint(string hint)
         {
             My_Database dataBase = new My_Database();
             try
@@ -182,7 +182,7 @@ namespace School_Management.Manager.Student
                 throw;
             }
         }
-        public DataTable getStudents(SqlCommand command)
+        public DataTable GetStudents(SqlCommand command)
         {
             command.Connection = data.GetConnection;
             SqlDataAdapter sd = new SqlDataAdapter(command);

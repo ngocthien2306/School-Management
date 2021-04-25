@@ -157,21 +157,21 @@ namespace School_Management.Manager.Student
                     SqlCommand command = new SqlCommand("SELECT * from Add_Student where birthday between @start and @end and gender = 'Male'");
                     command.Parameters.Add("@start", SqlDbType.DateTime).Value = start;
                     command.Parameters.Add("@end", SqlDbType.DateTime).Value = end;
-                    DataSource_Student.DataSource = student.getStudents(command);
+                    DataSource_Student.DataSource = student.GetStudents(command);
                 }
                 else if (Check_female.Checked)
                 {
                     SqlCommand command = new SqlCommand("SELECT * from Add_Student where birthday between @start and @end and gender = 'Female'");
                     command.Parameters.Add("@start", SqlDbType.DateTime).Value = start;
                     command.Parameters.Add("@end", SqlDbType.DateTime).Value = end;
-                    DataSource_Student.DataSource = student.getStudents(command);
+                    DataSource_Student.DataSource = student.GetStudents(command);
                 }
                 else
                 {
                     SqlCommand command = new SqlCommand("SELECT * from Add_Student where birthday between @start and @end");
                     command.Parameters.Add("@start", SqlDbType.DateTime).Value = start;
                     command.Parameters.Add("@end", SqlDbType.DateTime).Value = end;
-                    DataSource_Student.DataSource = student.getStudents(command);
+                    DataSource_Student.DataSource = student.GetStudents(command);
                 }
             }
             else
@@ -179,17 +179,17 @@ namespace School_Management.Manager.Student
                 if (Check_all.Checked)
                 {
                     SqlCommand command = new SqlCommand("SELECT * from Add_Student");
-                    DataSource_Student.DataSource = student.getStudents(command);
+                    DataSource_Student.DataSource = student.GetStudents(command);
                 }
                 else if (Check_female.Checked)
                 {
                     SqlCommand command = new SqlCommand("SELECT * from Add_Student where gender = 'Female'");
-                    DataSource_Student.DataSource = student.getStudents(command);
+                    DataSource_Student.DataSource = student.GetStudents(command);
                 }
                 else
                 {
                     SqlCommand command = new SqlCommand("SELECT * from Add_Student where gender = 'Male'");
-                    DataSource_Student.DataSource = student.getStudents(command);
+                    DataSource_Student.DataSource = student.GetStudents(command);
                 }
             }
         }

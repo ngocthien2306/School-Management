@@ -17,7 +17,7 @@ namespace School_Management.Manager.Course
         {
             InitializeComponent();
         }
-        private bool check()
+        private bool Check()
         {
             if(ID_Course_tb.Text.Trim() == "" || NameCourse_tb.Text.Trim() == "" || Period_tb.Text.Trim() == "" || Description.Text.Trim() == "")
             {
@@ -30,25 +30,33 @@ namespace School_Management.Manager.Course
         }
         private void Save_Course_Click(object sender, EventArgs e)
         {
-            if(this.check())
+
+            Courses course = new Courses();
+            course.Id = Convert.ToInt32(ID_Course_tb.Text);
+            course.Label = NameCourse_tb.Text;
+            course.Period = Convert.ToInt32(Period_tb.Text);
+            course.Description = Description.Text;
+            if (course.CheckCourseName(course.Label))
             {
-                MessageBox.Show("The textbox cannot accept blank! Please enter again", "Add Course", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            else
-            {
-                Courses course = new Courses();
-                course.Id = Convert.ToInt32(ID_Course_tb.Text);
-                course.Label = NameCourse_tb.Text;
-                course.Period = Convert.ToInt32(Period_tb.Text);
-                course.Description = Description.Text;
-                if (course.AddThisCourse())
+                if (this.Check())
                 {
-                    MessageBox.Show("Add a new course successful!", "Add Course", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("The textbox control is blank! Please enter again", "Add Course", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
-                    MessageBox.Show("Add failed", "Add Course", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    if (course.AddThisCourse())
+                    {
+                        MessageBox.Show("Add a new course successful!", "Add Course", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Add failed", "Add Course", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
                 }
+            }
+            else
+            {
+                MessageBox.Show("This course already!. Please add a new course", "Add Course", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }

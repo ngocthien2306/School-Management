@@ -83,12 +83,6 @@ namespace School_Management.Manager.Student
             Statics sta = new Statics();
             sta.ShowDialog();
         }
-
-        private void barButtonItem2_ItemClick(object sender, ItemClickEventArgs e)
-        {
-
-        }
-
         private void M020201_ItemClick(object sender, ItemClickEventArgs e)
         {
             Add_Course add = new Add_Course();
@@ -97,7 +91,26 @@ namespace School_Management.Manager.Student
 
         private void M020205_ItemClick(object sender, ItemClickEventArgs e)
         {
+            Find_Course find = new Find_Course();
+            find.ShowDialog();
+        }
 
+        private void M020202_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Edit_Course edit = new Edit_Course();
+            edit.ShowDialog();
+        }
+
+        private void M020203_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Edit_Course edit = new Edit_Course();
+            edit.ShowDialog();
+        }
+
+        private void M020103_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            ListCourse list = new ListCourse();
+            list.ShowDialog();
         }
     }
 }

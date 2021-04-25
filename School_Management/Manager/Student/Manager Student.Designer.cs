@@ -46,7 +46,7 @@ namespace School_Management.Manager.Student
             this.M01050101 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.M020101 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.M020103 = new DevExpress.XtraBars.BarButtonItem();
             this.M020102 = new DevExpress.XtraBars.BarButtonItem();
             this.M020201 = new DevExpress.XtraBars.BarButtonItem();
             this.M020202 = new DevExpress.XtraBars.BarButtonItem();
@@ -54,6 +54,7 @@ namespace School_Management.Manager.Student
             this.M020204 = new DevExpress.XtraBars.BarButtonItem();
             this.M020205 = new DevExpress.XtraBars.BarButtonItem();
             this.M020301 = new DevExpress.XtraBars.SkinPaletteDropDownButtonItem();
+            this.SkinRibbonGalleryBarItem = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
             this.M01 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.M0101 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.M0102 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -96,16 +97,17 @@ namespace School_Management.Manager.Student
             this.M01050101,
             this.barButtonItem1,
             this.M020101,
-            this.barButtonItem3,
+            this.M020103,
             this.M020102,
             this.M020201,
             this.M020202,
             this.M020203,
             this.M020204,
             this.M020205,
-            this.M020301});
+            this.M020301,
+            this.SkinRibbonGalleryBarItem});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
-            this.ribbon.MaxItemId = 27;
+            this.ribbon.MaxItemId = 28;
             this.ribbon.Name = "ribbon";
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.M01,
@@ -221,14 +223,14 @@ namespace School_Management.Manager.Student
             this.M020101.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("M020101.ImageOptions.Image")));
             this.M020101.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("M020101.ImageOptions.LargeImage")));
             this.M020101.Name = "M020101";
-            this.M020101.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick);
             // 
-            // barButtonItem3
+            // M020103
             // 
-            this.barButtonItem3.Caption = "List of Course";
-            this.barButtonItem3.Id = 17;
-            this.barButtonItem3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem3.ImageOptions.SvgImage")));
-            this.barButtonItem3.Name = "barButtonItem3";
+            this.M020103.Caption = "List of Course";
+            this.M020103.Id = 17;
+            this.M020103.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("M020103.ImageOptions.SvgImage")));
+            this.M020103.Name = "M020103";
+            this.M020103.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.M020103_ItemClick);
             // 
             // M020102
             // 
@@ -256,6 +258,7 @@ namespace School_Management.Manager.Student
             this.M020202.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("M020202.ImageOptions.Image")));
             this.M020202.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("M020202.ImageOptions.LargeImage")));
             this.M020202.Name = "M020202";
+            this.M020202.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.M020202_ItemClick);
             // 
             // M020203
             // 
@@ -264,6 +267,7 @@ namespace School_Management.Manager.Student
             this.M020203.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("M020203.ImageOptions.Image")));
             this.M020203.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("M020203.ImageOptions.LargeImage")));
             this.M020203.Name = "M020203";
+            this.M020203.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.M020203_ItemClick);
             // 
             // M020204
             // 
@@ -285,6 +289,12 @@ namespace School_Management.Manager.Student
             this.M020301.Enabled = false;
             this.M020301.Id = 26;
             this.M020301.Name = "M020301";
+            // 
+            // SkinRibbonGalleryBarItem
+            // 
+            this.SkinRibbonGalleryBarItem.Caption = "skinRibbonGalleryBarItem1";
+            this.SkinRibbonGalleryBarItem.Id = 27;
+            this.SkinRibbonGalleryBarItem.Name = "SkinRibbonGalleryBarItem";
             // 
             // M01
             // 
@@ -347,8 +357,8 @@ namespace School_Management.Manager.Student
             // M0201
             // 
             this.M0201.ItemLinks.Add(this.M020101);
-            this.M0201.ItemLinks.Add(this.barButtonItem3);
             this.M0201.ItemLinks.Add(this.M020102);
+            this.M0201.ItemLinks.Add(this.M020103, true);
             this.M0201.Name = "M0201";
             this.M0201.Text = "General";
             // 
@@ -363,7 +373,7 @@ namespace School_Management.Manager.Student
             // 
             // M0203
             // 
-            this.M0203.ItemLinks.Add(this.M020301);
+            this.M0203.ItemLinks.Add(this.SkinRibbonGalleryBarItem);
             this.M0203.Name = "M0203";
             this.M0203.Text = "Theme";
             // 
@@ -461,7 +471,7 @@ namespace School_Management.Manager.Student
         private Manager_StudentDataSetTableAdapters.Add_StudentTableAdapter add_StudentTableAdapter;
         private Manager_StudentDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private DevExpress.XtraBars.BarButtonItem M020101;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
+        private DevExpress.XtraBars.BarButtonItem M020103;
         private DevExpress.XtraBars.BarButtonItem M020102;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup M0202;
         private DevExpress.XtraBars.BarButtonItem M020201;
@@ -471,5 +481,6 @@ namespace School_Management.Manager.Student
         private DevExpress.XtraBars.BarButtonItem M020205;
         private DevExpress.XtraBars.SkinPaletteDropDownButtonItem M020301;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup M0203;
+        private DevExpress.XtraBars.SkinRibbonGalleryBarItem SkinRibbonGalleryBarItem;
     }
 }

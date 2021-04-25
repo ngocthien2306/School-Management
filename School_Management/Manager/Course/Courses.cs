@@ -139,6 +139,15 @@ namespace School_Management.Manager.Course
                 dataBase.Closeconnection();
             }
         }
+        public DataTable GetCourse(SqlCommand command)
+        {
+            My_Database data = new My_Database();
+            command.Connection = data.GetConnection;
+            SqlDataAdapter sd = new SqlDataAdapter(command);
+            DataTable table = new DataTable();
+            sd.Fill(table);
+            return table;
+        }
         public List<int> GetAllId()
         {
             List<int> result = new List<int>();
@@ -176,7 +185,7 @@ namespace School_Management.Manager.Course
             My_Database dataBase = new My_Database();
             try
             {
-                SqlCommand command = new SqlCommand("Select * From Courses Where Id = @id", dataBase.GetConnection);
+                SqlCommand command = new SqlCommand("Select * From Course Where Id = @id", dataBase.GetConnection);
                 command.Parameters.Add("@id", SqlDbType.Int).Value = Id;
                 SqlDataAdapter adapter = new SqlDataAdapter();
                 adapter.SelectCommand = command;
@@ -346,10 +355,10 @@ namespace School_Management.Manager.Course
                 SqlCommand command = new SqlCommand(
                     "UPDATE Course" +
                     " SET " +
-                    "label = @label," +
+                    "lable = @label," +
                     "period = @period," +
                     "description = @description" +
-                    " WHERE id = @ID"
+                    " WHERE Id = @ID"
                     , db.GetConnection);
 
                 command.Parameters.Add("@label", SqlDbType.NVarChar).Value = label;
