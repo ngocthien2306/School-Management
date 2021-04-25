@@ -35,11 +35,11 @@ namespace School_Management.Manager.Course
             My_Database mydb = new My_Database();
             try
             {
-                SqlCommand command = new SqlCommand("INSERT INTO Courses (Id, lable, period, description)" +
+                SqlCommand command = new SqlCommand("INSERT INTO Course (Id, lable, period, description)" +
                     "VALUES (@Id, @lable, @period, @desciption)", mydb.GetConnection);
 
                 command.Parameters.Add("@Id", SqlDbType.Int).Value = Id;
-                command.Parameters.Add("@label", SqlDbType.NVarChar).Value = Label;
+                command.Parameters.Add("@lable", SqlDbType.NVarChar).Value = Label;
                 command.Parameters.Add("@period", SqlDbType.Int).Value = Period;
                 command.Parameters.Add("@desciption", SqlDbType.Text).Value = Description;
 

@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using School_Management.Manager.Course;
 namespace School_Management.Manager.Student
 {
     public partial class Manager_Student : DevExpress.XtraBars.Ribbon.RibbonForm
@@ -62,8 +62,8 @@ namespace School_Management.Manager.Student
         }
 
         private void DataGrid_Student_Click(object sender, EventArgs e)
-        {
-            DataGrid_Student.Height = 40;
+        { 
+
         }
 
         private void M010404_ItemClick(object sender, ItemClickEventArgs e)
@@ -85,6 +85,17 @@ namespace School_Management.Manager.Student
         }
 
         private void barButtonItem2_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
+        }
+
+        private void M020201_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Add_Course add = new Add_Course();
+            add.ShowDialog();
+        }
+
+        private void M020205_ItemClick(object sender, ItemClickEventArgs e)
         {
 
         }
