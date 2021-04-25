@@ -16,5 +16,10 @@ namespace School_Management.Manager.Course
         {
             InitializeComponent();
         }
+
+        private void accordionControlElement2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

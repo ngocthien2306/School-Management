@@ -99,7 +99,7 @@ namespace School_Management.Manager.Student
             this.labelControl1.Appearance.ForeColor = System.Drawing.Color.Silver;
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Appearance.Options.UseForeColor = true;
-            this.labelControl1.Location = new System.Drawing.Point(123, 133);
+            this.labelControl1.Location = new System.Drawing.Point(133, 108);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(99, 35);
             this.labelControl1.TabIndex = 2;
@@ -311,7 +311,7 @@ namespace School_Management.Manager.Student
             this.Ribbon_Control.Name = "Ribbon_Control";
             this.Ribbon_Control.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.Method01});
-            this.Ribbon_Control.Size = new System.Drawing.Size(791, 143);
+            this.Ribbon_Control.Size = new System.Drawing.Size(775, 143);
             // 
             // Save_bt
             // 
@@ -386,7 +386,7 @@ namespace School_Management.Manager.Student
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(791, 459);
+            this.ClientSize = new System.Drawing.Size(775, 459);
             this.Controls.Add(this.Up_picture);
             this.Controls.Add(this.GroupPage);
             this.Controls.Add(this.Lastname);

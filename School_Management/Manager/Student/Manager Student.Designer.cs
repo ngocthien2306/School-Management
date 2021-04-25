@@ -45,6 +45,9 @@ namespace School_Management.Manager.Student
             this.M010501 = new DevExpress.XtraBars.BarButtonItem();
             this.M01050101 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.M020101 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.M020102 = new DevExpress.XtraBars.BarButtonItem();
             this.M01 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.M0101 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.M0102 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -52,32 +55,28 @@ namespace School_Management.Manager.Student
             this.m0105 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.M010601 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.M02 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.M0201 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.M03 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
-            this.DataGrid_Student = new DevExpress.XtraGrid.GridControl();
             this.add_StudentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.manager_StudentDataSet = new School_Management.Manager_StudentDataSet();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.colid = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colfirstname = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.collastname = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colbirthday = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colgender = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.coladdress = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colphone = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colpicture = new DevExpress.XtraGrid.Columns.GridColumn();
             this.add_StudentTableAdapter = new School_Management.Manager_StudentDataSetTableAdapters.Add_StudentTableAdapter();
             this.tableAdapterManager = new School_Management.Manager_StudentDataSetTableAdapters.TableAdapterManager();
-            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
+            this.M0202 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.M020201 = new DevExpress.XtraBars.BarButtonItem();
+            this.M020202 = new DevExpress.XtraBars.BarButtonItem();
+            this.M020203 = new DevExpress.XtraBars.BarButtonItem();
+            this.M020204 = new DevExpress.XtraBars.BarButtonItem();
+            this.M020205 = new DevExpress.XtraBars.BarButtonItem();
+            this.M0203 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.M020301 = new DevExpress.XtraBars.SkinPaletteDropDownButtonItem();
+            this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DataGrid_Student)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.add_StudentBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.manager_StudentDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
+            this.splitContainerControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // ribbon
@@ -99,11 +98,17 @@ namespace School_Management.Manager.Student
             this.M010501,
             this.M01050101,
             this.barButtonItem1,
-            this.barButtonItem2,
+            this.M020101,
             this.barButtonItem3,
-            this.barButtonItem4});
+            this.M020102,
+            this.M020201,
+            this.M020202,
+            this.M020203,
+            this.M020204,
+            this.M020205,
+            this.M020301});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
-            this.ribbon.MaxItemId = 19;
+            this.ribbon.MaxItemId = 27;
             this.ribbon.Name = "ribbon";
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.M01,
@@ -212,6 +217,30 @@ namespace School_Management.Manager.Student
             this.barButtonItem1.Id = 14;
             this.barButtonItem1.Name = "barButtonItem1";
             // 
+            // M020101
+            // 
+            this.M020101.Caption = "General Course";
+            this.M020101.Id = 16;
+            this.M020101.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("M020101.ImageOptions.Image")));
+            this.M020101.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("M020101.ImageOptions.LargeImage")));
+            this.M020101.Name = "M020101";
+            this.M020101.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick);
+            // 
+            // barButtonItem3
+            // 
+            this.barButtonItem3.Caption = "List of Course";
+            this.barButtonItem3.Id = 17;
+            this.barButtonItem3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem3.ImageOptions.SvgImage")));
+            this.barButtonItem3.Name = "barButtonItem3";
+            // 
+            // M020102
+            // 
+            this.M020102.Caption = "Print";
+            this.M020102.Id = 18;
+            this.M020102.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("M020102.ImageOptions.Image")));
+            this.M020102.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("M020102.ImageOptions.LargeImage")));
+            this.M020102.Name = "M020102";
+            // 
             // M01
             // 
             this.M01.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -264,17 +293,19 @@ namespace School_Management.Manager.Student
             // M02
             // 
             this.M02.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup1});
+            this.M0201,
+            this.M0202,
+            this.M0203});
             this.M02.Name = "M02";
             this.M02.Text = "Course";
             // 
-            // ribbonPageGroup1
+            // M0201
             // 
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem2);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem3);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem4);
-            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "ribbonPageGroup1";
+            this.M0201.ItemLinks.Add(this.M020101);
+            this.M0201.ItemLinks.Add(this.barButtonItem3);
+            this.M0201.ItemLinks.Add(this.M020102);
+            this.M0201.Name = "M0201";
+            this.M0201.Text = "General";
             // 
             // M03
             // 
@@ -295,20 +326,6 @@ namespace School_Management.Manager.Student
             this.ribbonStatusBar.Ribbon = this.ribbon;
             this.ribbonStatusBar.Size = new System.Drawing.Size(959, 31);
             // 
-            // DataGrid_Student
-            // 
-            this.DataGrid_Student.DataSource = this.add_StudentBindingSource;
-            this.DataGrid_Student.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DataGrid_Student.Location = new System.Drawing.Point(0, 143);
-            this.DataGrid_Student.MainView = this.gridView1;
-            this.DataGrid_Student.MenuManager = this.ribbon;
-            this.DataGrid_Student.Name = "DataGrid_Student";
-            this.DataGrid_Student.Size = new System.Drawing.Size(959, 401);
-            this.DataGrid_Student.TabIndex = 2;
-            this.DataGrid_Student.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
-            this.DataGrid_Student.Click += new System.EventHandler(this.DataGrid_Student_Click);
-            // 
             // add_StudentBindingSource
             // 
             this.add_StudentBindingSource.DataMember = "Add_Student";
@@ -318,76 +335,6 @@ namespace School_Management.Manager.Student
             // 
             this.manager_StudentDataSet.DataSetName = "Manager_StudentDataSet";
             this.manager_StudentDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // gridView1
-            // 
-            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colid,
-            this.colfirstname,
-            this.collastname,
-            this.colbirthday,
-            this.colgender,
-            this.coladdress,
-            this.colphone,
-            this.colpicture});
-            this.gridView1.GridControl = this.DataGrid_Student;
-            this.gridView1.Name = "gridView1";
-            // 
-            // colid
-            // 
-            this.colid.FieldName = "id";
-            this.colid.Name = "colid";
-            this.colid.Visible = true;
-            this.colid.VisibleIndex = 0;
-            // 
-            // colfirstname
-            // 
-            this.colfirstname.FieldName = "firstname";
-            this.colfirstname.Name = "colfirstname";
-            this.colfirstname.Visible = true;
-            this.colfirstname.VisibleIndex = 1;
-            // 
-            // collastname
-            // 
-            this.collastname.FieldName = "lastname";
-            this.collastname.Name = "collastname";
-            this.collastname.Visible = true;
-            this.collastname.VisibleIndex = 2;
-            // 
-            // colbirthday
-            // 
-            this.colbirthday.FieldName = "birthday";
-            this.colbirthday.Name = "colbirthday";
-            this.colbirthday.Visible = true;
-            this.colbirthday.VisibleIndex = 3;
-            // 
-            // colgender
-            // 
-            this.colgender.FieldName = "gender";
-            this.colgender.Name = "colgender";
-            this.colgender.Visible = true;
-            this.colgender.VisibleIndex = 4;
-            // 
-            // coladdress
-            // 
-            this.coladdress.FieldName = "address";
-            this.coladdress.Name = "coladdress";
-            this.coladdress.Visible = true;
-            this.coladdress.VisibleIndex = 5;
-            // 
-            // colphone
-            // 
-            this.colphone.FieldName = "phone";
-            this.colphone.Name = "colphone";
-            this.colphone.Visible = true;
-            this.colphone.VisibleIndex = 6;
-            // 
-            // colpicture
-            // 
-            this.colpicture.FieldName = "picture";
-            this.colpicture.Name = "colpicture";
-            this.colpicture.Visible = true;
-            this.colpicture.VisibleIndex = 7;
             // 
             // add_StudentTableAdapter
             // 
@@ -402,31 +349,84 @@ namespace School_Management.Manager.Student
             this.tableAdapterManager.NameTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = School_Management.Manager_StudentDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // barButtonItem2
+            // M0202
             // 
-            this.barButtonItem2.Caption = "Manager Course";
-            this.barButtonItem2.Id = 16;
-            this.barButtonItem2.Name = "barButtonItem2";
-            this.barButtonItem2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick);
+            this.M0202.ItemLinks.Add(this.M020201);
+            this.M0202.ItemLinks.Add(this.M020202);
+            this.M0202.ItemLinks.Add(this.M020203);
+            this.M0202.ItemLinks.Add(this.M020205);
+            this.M0202.Name = "M0202";
+            this.M0202.Text = "CRUD Course";
             // 
-            // barButtonItem3
+            // M020201
             // 
-            this.barButtonItem3.Caption = "barButtonItem3";
-            this.barButtonItem3.Id = 17;
-            this.barButtonItem3.Name = "barButtonItem3";
+            this.M020201.ActAsDropDown = true;
+            this.M020201.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
+            this.M020201.Caption = "Add a new Course";
+            this.M020201.Id = 21;
+            this.M020201.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("M020201.ImageOptions.Image")));
+            this.M020201.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("M020201.ImageOptions.LargeImage")));
+            this.M020201.Name = "M020201";
             // 
-            // barButtonItem4
+            // M020202
             // 
-            this.barButtonItem4.Caption = "barButtonItem4";
-            this.barButtonItem4.Id = 18;
-            this.barButtonItem4.Name = "barButtonItem4";
+            this.M020202.Caption = "Edit Course";
+            this.M020202.Id = 22;
+            this.M020202.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("M020202.ImageOptions.Image")));
+            this.M020202.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("M020202.ImageOptions.LargeImage")));
+            this.M020202.Name = "M020202";
+            // 
+            // M020203
+            // 
+            this.M020203.Caption = "Remove Course";
+            this.M020203.Id = 23;
+            this.M020203.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("M020203.ImageOptions.Image")));
+            this.M020203.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("M020203.ImageOptions.LargeImage")));
+            this.M020203.Name = "M020203";
+            // 
+            // M020204
+            // 
+            this.M020204.Caption = "Delete";
+            this.M020204.Id = 24;
+            this.M020204.Name = "M020204";
+            // 
+            // M020205
+            // 
+            this.M020205.Caption = "Find Course";
+            this.M020205.Id = 25;
+            this.M020205.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("M020205.ImageOptions.Image")));
+            this.M020205.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("M020205.ImageOptions.LargeImage")));
+            this.M020205.Name = "M020205";
+            // 
+            // M0203
+            // 
+            this.M0203.ItemLinks.Add(this.M020301);
+            this.M0203.Name = "M0203";
+            this.M0203.Text = "Theme";
+            // 
+            // M020301
+            // 
+            this.M020301.Enabled = false;
+            this.M020301.Id = 26;
+            this.M020301.Name = "M020301";
+            // 
+            // splitContainerControl1
+            // 
+            this.splitContainerControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainerControl1.Location = new System.Drawing.Point(0, 143);
+            this.splitContainerControl1.Name = "splitContainerControl1";
+            this.splitContainerControl1.Panel1.Text = "Panel1";
+            this.splitContainerControl1.Panel2.Text = "Panel2";
+            this.splitContainerControl1.Size = new System.Drawing.Size(959, 401);
+            this.splitContainerControl1.SplitterPosition = 236;
+            this.splitContainerControl1.TabIndex = 5;
             // 
             // Manager_Student
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(959, 575);
-            this.Controls.Add(this.DataGrid_Student);
+            this.Controls.Add(this.splitContainerControl1);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbon);
             this.Name = "Manager_Student";
@@ -435,10 +435,10 @@ namespace School_Management.Manager.Student
             this.Text = "Manager Student ";
             this.Load += new System.EventHandler(this.Manager_Student_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DataGrid_Student)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.add_StudentBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.manager_StudentDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).EndInit();
+            this.splitContainerControl1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -467,26 +467,25 @@ namespace School_Management.Manager.Student
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup m0105;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup M010601;
         private DevExpress.XtraBars.Ribbon.RibbonPage M02;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup M0201;
         private DevExpress.XtraBars.Ribbon.RibbonPage M03;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private Manager_StudentDataSet manager_StudentDataSet;
         private System.Windows.Forms.BindingSource add_StudentBindingSource;
         private Manager_StudentDataSetTableAdapters.Add_StudentTableAdapter add_StudentTableAdapter;
         private Manager_StudentDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private DevExpress.XtraGrid.Columns.GridColumn colid;
-        private DevExpress.XtraGrid.Columns.GridColumn colfirstname;
-        private DevExpress.XtraGrid.Columns.GridColumn collastname;
-        private DevExpress.XtraGrid.Columns.GridColumn colbirthday;
-        private DevExpress.XtraGrid.Columns.GridColumn colgender;
-        private DevExpress.XtraGrid.Columns.GridColumn coladdress;
-        private DevExpress.XtraGrid.Columns.GridColumn colphone;
-        private DevExpress.XtraGrid.Columns.GridColumn colpicture;
-        public DevExpress.XtraGrid.GridControl DataGrid_Student;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
+        private DevExpress.XtraBars.BarButtonItem M020101;
         private DevExpress.XtraBars.BarButtonItem barButtonItem3;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
+        private DevExpress.XtraBars.BarButtonItem M020102;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup M0202;
+        private DevExpress.XtraBars.BarButtonItem M020201;
+        private DevExpress.XtraBars.BarButtonItem M020202;
+        private DevExpress.XtraBars.BarButtonItem M020203;
+        private DevExpress.XtraBars.BarButtonItem M020204;
+        private DevExpress.XtraBars.BarButtonItem M020205;
+        private DevExpress.XtraBars.SkinPaletteDropDownButtonItem M020301;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup M0203;
+        private DevExpress.XtraEditors.SplitContainerControl splitContainerControl1;
     }
 }
