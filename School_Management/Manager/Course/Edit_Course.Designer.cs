@@ -98,15 +98,15 @@ namespace School_Management.Manager.Course
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.toolbarFormManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(682, 0);
+            this.barDockControlTop.Size = new System.Drawing.Size(677, 0);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 424);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 406);
             this.barDockControlBottom.Manager = this.toolbarFormManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(682, 0);
+            this.barDockControlBottom.Size = new System.Drawing.Size(677, 0);
             // 
             // barDockControlLeft
             // 
@@ -114,15 +114,15 @@ namespace School_Management.Manager.Course
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
             this.barDockControlLeft.Manager = this.toolbarFormManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 424);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 406);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(682, 0);
+            this.barDockControlRight.Location = new System.Drawing.Point(677, 0);
             this.barDockControlRight.Manager = this.toolbarFormManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 424);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 406);
             // 
             // barButtonItem1
             // 
@@ -151,12 +151,12 @@ namespace School_Management.Manager.Course
             this.Edit_CourselayoutControl1ConvertedLayout.Location = new System.Drawing.Point(150, 0);
             this.Edit_CourselayoutControl1ConvertedLayout.Name = "Edit_CourselayoutControl1ConvertedLayout";
             this.Edit_CourselayoutControl1ConvertedLayout.Root = this.ControlGroup;
-            this.Edit_CourselayoutControl1ConvertedLayout.Size = new System.Drawing.Size(532, 424);
+            this.Edit_CourselayoutControl1ConvertedLayout.Size = new System.Drawing.Size(527, 406);
             this.Edit_CourselayoutControl1ConvertedLayout.TabIndex = 6;
             // 
             // xtraTabControl1
             // 
-            this.xtraTabControl1.Location = new System.Drawing.Point(18, 20);
+            this.xtraTabControl1.Location = new System.Drawing.Point(16, 7);
             this.xtraTabControl1.Name = "xtraTabControl1";
             this.xtraTabControl1.SelectedTabPage = this.XTabPage;
             this.xtraTabControl1.Size = new System.Drawing.Size(511, 400);
@@ -274,7 +274,7 @@ namespace School_Management.Manager.Course
             this.ControlGroup.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
             this.ControlGroup.GroupBordersVisible = false;
             this.ControlGroup.Name = "ControlGroup";
-            this.ControlGroup.Size = new System.Drawing.Size(532, 424);
+            this.ControlGroup.Size = new System.Drawing.Size(527, 406);
             this.ControlGroup.TextVisible = false;
             // 
             // fluentDesignFormContainer1
@@ -282,7 +282,7 @@ namespace School_Management.Manager.Course
             this.fluentDesignFormContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.fluentDesignFormContainer1.Location = new System.Drawing.Point(150, 0);
             this.fluentDesignFormContainer1.Name = "fluentDesignFormContainer1";
-            this.fluentDesignFormContainer1.Size = new System.Drawing.Size(532, 424);
+            this.fluentDesignFormContainer1.Size = new System.Drawing.Size(527, 406);
             this.fluentDesignFormContainer1.TabIndex = 11;
             // 
             // accordionControl1
@@ -298,7 +298,7 @@ namespace School_Management.Manager.Course
             this.accordionControl1.Location = new System.Drawing.Point(0, 0);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            this.accordionControl1.Size = new System.Drawing.Size(150, 424);
+            this.accordionControl1.Size = new System.Drawing.Size(150, 406);
             this.accordionControl1.TabIndex = 12;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
@@ -396,7 +396,7 @@ namespace School_Management.Manager.Course
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(682, 424);
+            this.ClientSize = new System.Drawing.Size(677, 406);
             this.Controls.Add(this.Edit_CourselayoutControl1ConvertedLayout);
             this.Controls.Add(this.fluentDesignFormContainer1);
             this.Controls.Add(this.accordionControl1);

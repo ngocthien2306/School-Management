@@ -112,5 +112,18 @@ namespace School_Management.Manager.Student
             ListCourse list = new ListCourse();
             list.ShowDialog();
         }
+
+        private void M020101_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            try
+            {
+                Manager_Course manager = new Manager_Course();
+                manager.ShowDialog();
+            }
+            catch
+            {
+                MessageBox.Show("The information a new record is blank. Please enter again!", "Profile", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
     }
 }

@@ -41,7 +41,7 @@ namespace School_Management.Manager.Student
 
                 dataBase.Openconnection();
                 Student student = new Student();
-                DataTable table = student.getStudents(command);
+                DataTable table = student.GetStudents(command);
                 if (table.Rows.Count > 0)
                 {
                     SqlDataAdapter adapter = new SqlDataAdapter();

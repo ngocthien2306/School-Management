@@ -288,7 +288,7 @@ namespace School_Management.Manager.Course
             My_Database db = new My_Database();
             try
             {
-                SqlCommand command = new SqlCommand("SELECT * FROM Course WHERE label=@cName and id<>@cID", db.GetConnection);
+                SqlCommand command = new SqlCommand("SELECT * FROM Course WHERE lable=@cName and Id<>@cID", db.GetConnection);
 
                 command.Parameters.Add("@cName", SqlDbType.VarChar).Value = courseName;
                 command.Parameters.Add("@cID", SqlDbType.Int).Value = courseID;
@@ -451,7 +451,7 @@ namespace School_Management.Manager.Course
             My_Database db = new My_Database();
             try
             {
-                string query = "SELECT * FROM Courses";
+                string query = "SELECT * FROM Course";
                 return this.GetTable(query);
             }
             catch (Exception)

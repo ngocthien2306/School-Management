@@ -223,6 +223,7 @@ namespace School_Management.Manager.Student
             this.M020101.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("M020101.ImageOptions.Image")));
             this.M020101.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("M020101.ImageOptions.LargeImage")));
             this.M020101.Name = "M020101";
+            this.M020101.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.M020101_ItemClick);
             // 
             // M020103
             // 

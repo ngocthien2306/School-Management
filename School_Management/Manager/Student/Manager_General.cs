@@ -230,7 +230,7 @@ namespace School_Management.Manager.Student
             }
             else {
                 Student student = new Student();
-                DataTable table = student.findByHint(Find_tb.Text);
+                DataTable table = student.FindByHint(Find_tb.Text);
                 table = student.StudentsTableNaming(table);
                 DataSource_Student.RowTemplate.Height = 80;
                 DataSource_Student.DataSource = table;
