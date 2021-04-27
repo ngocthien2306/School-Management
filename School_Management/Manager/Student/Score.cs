@@ -14,12 +14,9 @@ namespace School_Management.Manager.Student
     
     public partial class Score
     {
-        public int student_id { get; set; }
-        public int course_id { get; set; }
-        public Nullable<int> student_score { get; set; }
-        public string descriptions { get; set; }
-    
-        public virtual Course Course { get; set; }
-        public virtual IF_Student IF_Student { get; set; }
+        public int Student_id { get; set; }
+        public Nullable<int> Course_id { get; set; }
+        public Nullable<double> Student_score { get; set; }
+        public string Description { get; set; }
     }
 }

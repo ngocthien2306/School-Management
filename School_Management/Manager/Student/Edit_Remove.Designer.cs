@@ -39,7 +39,6 @@ namespace School_Management.Manager.Student
             this.IdStudent_lb = new DevExpress.XtraEditors.LabelControl();
             this.Up_picture = new DevExpress.XtraEditors.SimpleButton();
             this.Picture_Student = new DevExpress.XtraEditors.PictureEdit();
-            this.labelControl = new DevExpress.XtraEditors.LabelControl();
             this.windowsUIButtonPanel1 = new DevExpress.XtraBars.Docking2010.WindowsUIButtonPanel();
             this.GroupPage = new DevExpress.XtraTab.XtraTabControl();
             this.Contact_student = new DevExpress.XtraTab.XtraTabPage();
@@ -146,18 +145,6 @@ namespace School_Management.Manager.Student
             this.Picture_Student.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.Picture_Student.Size = new System.Drawing.Size(219, 193);
             this.Picture_Student.TabIndex = 17;
-            // 
-            // labelControl
-            // 
-            this.labelControl.Appearance.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl.Appearance.ForeColor = System.Drawing.Color.Silver;
-            this.labelControl.Appearance.Options.UseFont = true;
-            this.labelControl.Appearance.Options.UseForeColor = true;
-            this.labelControl.Location = new System.Drawing.Point(120, 122);
-            this.labelControl.Name = "labelControl";
-            this.labelControl.Size = new System.Drawing.Size(99, 35);
-            this.labelControl.TabIndex = 16;
-            this.labelControl.Text = "Student";
             // 
             // windowsUIButtonPanel1
             // 
@@ -412,7 +399,6 @@ namespace School_Management.Manager.Student
             this.Controls.Add(this.windowsUIButtonPanel1);
             this.Controls.Add(this.Up_picture);
             this.Controls.Add(this.Picture_Student);
-            this.Controls.Add(this.labelControl);
             this.Controls.Add(this.Lastname);
             this.Controls.Add(this.Firstname);
             this.Controls.Add(this.ID_student);
@@ -458,7 +444,6 @@ namespace School_Management.Manager.Student
         private DevExpress.XtraEditors.LabelControl Email_lb;
         public DevExpress.XtraEditors.TextEdit ID_student;
         public DevExpress.XtraEditors.LabelControl IdStudent_lb;
-        public DevExpress.XtraEditors.LabelControl labelControl;
         public DevExpress.XtraBars.Docking2010.WindowsUIButtonPanel windowsUIButtonPanel1;
         public DevExpress.XtraEditors.TextEdit Lastname;
         public DevExpress.XtraEditors.TextEdit Firstname;

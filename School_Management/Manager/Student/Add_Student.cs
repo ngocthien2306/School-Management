@@ -12,9 +12,15 @@ namespace School_Management.Manager.Student
     using System;
     using System.Collections.Generic;
     
-    public partial class LoginUser
+    public partial class Add_Student
     {
-        public string username { get; set; }
-        public string passwords { get; set; }
+        public int id { get; set; }
+        public string firstname { get; set; }
+        public string lastname { get; set; }
+        public Nullable<System.DateTime> birthday { get; set; }
+        public string gender { get; set; }
+        public string address { get; set; }
+        public string phone { get; set; }
+        public byte[] picture { get; set; }
     }
 }

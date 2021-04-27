@@ -13,10 +13,10 @@ namespace School_Management.Manager.Student
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class School_ManagementEntities : DbContext
+    public partial class StudentEntities : DbContext
     {
-        public School_ManagementEntities()
-            : base("name=School_ManagementEntities")
+        public StudentEntities()
+            : base("name=StudentEntities")
         {
         }
     
@@ -25,10 +25,11 @@ namespace School_Management.Manager.Student
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<Add_Student> Add_Student { get; set; }
         public virtual DbSet<Course> Courses { get; set; }
-        public virtual DbSet<IF_Student> IF_Student { get; set; }
-        public virtual DbSet<LoginUser> LoginUsers { get; set; }
-        public virtual DbSet<Score> Scores { get; set; }
+        public virtual DbSet<Login> Logins { get; set; }
+        public virtual DbSet<Name> Names { get; set; }
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
+        public virtual DbSet<Score> Scores { get; set; }
     }
 }

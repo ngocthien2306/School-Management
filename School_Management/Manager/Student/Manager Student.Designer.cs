@@ -66,12 +66,15 @@ namespace School_Management.Manager.Student
             this.M0202 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.M0203 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.M03 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.M0301 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.add_StudentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.manager_StudentDataSet = new School_Management.Manager_StudentDataSet();
             this.add_StudentTableAdapter = new School_Management.Manager_StudentDataSetTableAdapters.Add_StudentTableAdapter();
             this.tableAdapterManager = new School_Management.Manager_StudentDataSetTableAdapters.TableAdapterManager();
+            this.M030101 = new DevExpress.XtraBars.BarButtonItem();
+            this.M030102 = new DevExpress.XtraBars.BarButtonItem();
+            this.M030103 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.add_StudentBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.manager_StudentDataSet)).BeginInit();
@@ -105,9 +108,12 @@ namespace School_Management.Manager.Student
             this.M020204,
             this.M020205,
             this.M020301,
-            this.SkinRibbonGalleryBarItem});
+            this.SkinRibbonGalleryBarItem,
+            this.M030101,
+            this.M030102,
+            this.M030103});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
-            this.ribbon.MaxItemId = 28;
+            this.ribbon.MaxItemId = 31;
             this.ribbon.Name = "ribbon";
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.M01,
@@ -381,14 +387,17 @@ namespace School_Management.Manager.Student
             // M03
             // 
             this.M03.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup2});
+            this.M0301});
             this.M03.Name = "M03";
             this.M03.Text = "Score";
             // 
-            // ribbonPageGroup2
+            // M0301
             // 
-            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
-            this.ribbonPageGroup2.Text = "ribbonPageGroup2";
+            this.M0301.ItemLinks.Add(this.M030101);
+            this.M0301.ItemLinks.Add(this.M030102);
+            this.M0301.ItemLinks.Add(this.M030103);
+            this.M0301.Name = "M0301";
+            this.M0301.Text = "Task";
             // 
             // ribbonStatusBar
             // 
@@ -419,6 +428,26 @@ namespace School_Management.Manager.Student
             this.tableAdapterManager.LoginTableAdapter = null;
             this.tableAdapterManager.NameTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = School_Management.Manager_StudentDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // M030101
+            // 
+            this.M030101.Caption = "Manager Score";
+            this.M030101.Id = 28;
+            this.M030101.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("M030101.ImageOptions.SvgImage")));
+            this.M030101.Name = "M030101";
+            this.M030101.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.M030101_ItemClick);
+            // 
+            // M030102
+            // 
+            this.M030102.Caption = "Add Score";
+            this.M030102.Id = 29;
+            this.M030102.Name = "M030102";
+            // 
+            // M030103
+            // 
+            this.M030103.Caption = "Update";
+            this.M030103.Id = 30;
+            this.M030103.Name = "M030103";
             // 
             // Manager_Student
             // 
@@ -465,7 +494,7 @@ namespace School_Management.Manager.Student
         private DevExpress.XtraBars.Ribbon.RibbonPage M02;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup M0201;
         private DevExpress.XtraBars.Ribbon.RibbonPage M03;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup M0301;
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
         private Manager_StudentDataSet manager_StudentDataSet;
         private System.Windows.Forms.BindingSource add_StudentBindingSource;
@@ -483,5 +512,8 @@ namespace School_Management.Manager.Student
         private DevExpress.XtraBars.SkinPaletteDropDownButtonItem M020301;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup M0203;
         private DevExpress.XtraBars.SkinRibbonGalleryBarItem SkinRibbonGalleryBarItem;
+        private DevExpress.XtraBars.BarButtonItem M030101;
+        private DevExpress.XtraBars.BarButtonItem M030102;
+        private DevExpress.XtraBars.BarButtonItem M030103;
     }
 }

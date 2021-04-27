@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace School_Management.Manager.Student
 {
-    class Student
+    class Students
     {
         public int ID { get; set; }
         public string Lname { get; set; }
@@ -20,7 +20,7 @@ namespace School_Management.Manager.Student
         public string Phone { get; set; }
         public string Address { get; set; }
         public MemoryStream Picture { get; set; }
-        public Student(int id = 0, string firstname = "", string lastname = "",
+        public Students(int id = 0, string firstname = "", string lastname = "",
             DateTime date = default, char gender = '\0', string phone = "", string address = "", MemoryStream picture = default)
         {
             ID = id;
@@ -190,6 +190,34 @@ namespace School_Management.Manager.Student
             sd.Fill(table);
             return table;
         }
+        public DataTable GetAllBriefInfo()
+        {
+            My_Database db = new My_Database();
+            try
+            {
+                db.Openconnection();
+                SqlCommand command = new SqlCommand()
+                {
+                    Connection = db.GetConnection,
+                    CommandText = "SELECT ID, firstname, lastname FROM Students_info"
+                };
+                SqlDataAdapter adapter = new SqlDataAdapter();
+                adapter.SelectCommand = command;
+                DataTable table = new DataTable();
+                adapter.Fill(table);
+                db.Closeconnection();
 
+                return table;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                db.Closeconnection();
+            }
+
+        }
     }
 }

@@ -29,7 +29,7 @@ namespace School_Management.Manager.Student
         }
         private void Static()
         {
-            Student student = new Student();
+            Students student = new Students();
             double male = Convert.ToDouble(student.TotalMaleStudent());
             double female = Convert.ToDouble(student.TotalFemaleStudent());
             this.DrawPieChart(male, female);

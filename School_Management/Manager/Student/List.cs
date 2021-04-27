@@ -33,9 +33,5 @@ namespace School_Management.Manager.Student
             this.add_StudentTableAdapter.Fill(this.manager_StudentDataSet.Add_Student);
 
         }
-        private void bindingNavigatorMoveNextItem_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

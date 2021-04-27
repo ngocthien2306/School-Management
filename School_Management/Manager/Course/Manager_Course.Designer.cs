@@ -30,12 +30,27 @@ namespace School_Management.Manager.Course
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode3 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions windowsUIButtonImageOptions1 = new DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Manager_Course));
-            this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
+            DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions windowsUIButtonImageOptions2 = new DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions();
+            DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions windowsUIButtonImageOptions3 = new DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions();
+            DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions windowsUIButtonImageOptions4 = new DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions();
+            this.TileView = new DevExpress.XtraGrid.Views.Tile.TileView();
             this.CourseGridControl = new DevExpress.XtraGrid.GridControl();
             this.courseBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.manager_StudentDataSet = new School_Management.Manager_StudentDataSet();
             this.CardView = new DevExpress.XtraGrid.Views.Card.CardView();
+            this.LayoutView = new DevExpress.XtraGrid.Views.Layout.LayoutView();
+            this.layoutViewCard1 = new DevExpress.XtraGrid.Views.Layout.LayoutViewCard();
+            this.GridView = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.GridColumn = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.GridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.GridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.GridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.XtraTabPage = new DevExpress.XtraTab.XtraTabPage();
             this.WindowsUIButtonPanel = new DevExpress.XtraBars.Docking2010.WindowsUIButtonPanel();
@@ -50,59 +65,67 @@ namespace School_Management.Manager.Course
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             this.courseTableAdapter = new School_Management.Manager_StudentDataSetTableAdapters.CourseTableAdapter();
             this.tableAdapterManager = new School_Management.Manager_StudentDataSetTableAdapters.TableAdapterManager();
-            this.NavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.NavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+            this.courseBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.NavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.NavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.NavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.NavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.BindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.BindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
-            this.splitContainerControl1.SuspendLayout();
+            this.courseBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            ((System.ComponentModel.ISupportInitialize)(this.TileView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CourseGridControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.courseBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.manager_StudentDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CardView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LayoutView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewCard1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
+            this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.XtraTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Period)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Name_Course.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ID_Course.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BindingNavigator)).BeginInit();
-            this.BindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.courseBindingNavigator)).BeginInit();
+            this.courseBindingNavigator.SuspendLayout();
             this.SuspendLayout();
             // 
-            // splitContainerControl1
+            // TileView
             // 
-            this.splitContainerControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainerControl1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainerControl1.Name = "splitContainerControl1";
-            this.splitContainerControl1.Panel1.Controls.Add(this.CourseGridControl);
-            this.splitContainerControl1.Panel1.Text = "Panel1";
-            this.splitContainerControl1.Panel2.Controls.Add(this.xtraTabControl1);
-            this.splitContainerControl1.Panel2.Text = "Panel2";
-            this.splitContainerControl1.Size = new System.Drawing.Size(933, 453);
-            this.splitContainerControl1.SplitterPosition = 429;
-            this.splitContainerControl1.TabIndex = 0;
+            this.TileView.GridControl = this.CourseGridControl;
+            this.TileView.Name = "TileView";
             // 
             // CourseGridControl
             // 
             this.CourseGridControl.DataSource = this.courseBindingSource;
-            this.CourseGridControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CourseGridControl.Location = new System.Drawing.Point(0, 0);
-            this.CourseGridControl.MainView = this.CardView;
+            gridLevelNode1.LevelTemplate = this.TileView;
+            gridLevelNode1.RelationName = "Level1";
+            gridLevelNode2.LevelTemplate = this.CardView;
+            gridLevelNode2.RelationName = "Level2";
+            gridLevelNode3.LevelTemplate = this.LayoutView;
+            gridLevelNode3.RelationName = "Level3";
+            this.CourseGridControl.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
+            gridLevelNode1,
+            gridLevelNode2,
+            gridLevelNode3});
+            this.CourseGridControl.Location = new System.Drawing.Point(0, 28);
+            this.CourseGridControl.MainView = this.GridView;
             this.CourseGridControl.Name = "CourseGridControl";
-            this.CourseGridControl.Size = new System.Drawing.Size(429, 453);
+            this.CourseGridControl.Size = new System.Drawing.Size(429, 425);
             this.CourseGridControl.TabIndex = 0;
             this.CourseGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.CardView});
+            this.CardView,
+            this.LayoutView,
+            this.GridView,
+            this.TileView});
             // 
             // courseBindingSource
             // 
@@ -119,6 +142,73 @@ namespace School_Management.Manager.Course
             this.CardView.GridControl = this.CourseGridControl;
             this.CardView.Name = "CardView";
             this.CardView.VertScrollVisibility = DevExpress.XtraGrid.Views.Base.ScrollVisibility.Auto;
+            // 
+            // LayoutView
+            // 
+            this.LayoutView.GridControl = this.CourseGridControl;
+            this.LayoutView.Name = "LayoutView";
+            this.LayoutView.TemplateCard = this.layoutViewCard1;
+            // 
+            // layoutViewCard1
+            // 
+            this.layoutViewCard1.HeaderButtonsLocation = DevExpress.Utils.GroupElementLocation.AfterText;
+            this.layoutViewCard1.Name = "layoutViewTemplateCard";
+            // 
+            // GridView
+            // 
+            this.GridView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.GridColumn,
+            this.GridColumn1,
+            this.GridColumn3,
+            this.GridColumn4});
+            this.GridView.GridControl = this.CourseGridControl;
+            this.GridView.Name = "GridView";
+            this.GridView.VertScrollVisibility = DevExpress.XtraGrid.Views.Base.ScrollVisibility.Never;
+            // 
+            // GridColumn
+            // 
+            this.GridColumn.Caption = "ID";
+            this.GridColumn.FieldName = "Id";
+            this.GridColumn.Name = "GridColumn";
+            this.GridColumn.Visible = true;
+            this.GridColumn.VisibleIndex = 0;
+            // 
+            // GridColumn1
+            // 
+            this.GridColumn1.Caption = "Name of Course";
+            this.GridColumn1.FieldName = "lable";
+            this.GridColumn1.Name = "GridColumn1";
+            this.GridColumn1.Visible = true;
+            this.GridColumn1.VisibleIndex = 1;
+            // 
+            // GridColumn3
+            // 
+            this.GridColumn3.Caption = "Period";
+            this.GridColumn3.FieldName = "period";
+            this.GridColumn3.Name = "GridColumn3";
+            this.GridColumn3.Visible = true;
+            this.GridColumn3.VisibleIndex = 2;
+            // 
+            // GridColumn4
+            // 
+            this.GridColumn4.Caption = "Description";
+            this.GridColumn4.FieldName = "description";
+            this.GridColumn4.Name = "GridColumn4";
+            this.GridColumn4.Visible = true;
+            this.GridColumn4.VisibleIndex = 3;
+            // 
+            // splitContainerControl1
+            // 
+            this.splitContainerControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainerControl1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainerControl1.Name = "splitContainerControl1";
+            this.splitContainerControl1.Panel1.Controls.Add(this.CourseGridControl);
+            this.splitContainerControl1.Panel1.Text = "Panel1";
+            this.splitContainerControl1.Panel2.Controls.Add(this.xtraTabControl1);
+            this.splitContainerControl1.Panel2.Text = "Panel2";
+            this.splitContainerControl1.Size = new System.Drawing.Size(933, 453);
+            this.splitContainerControl1.SplitterPosition = 429;
+            this.splitContainerControl1.TabIndex = 0;
             // 
             // xtraTabControl1
             // 
@@ -149,6 +239,16 @@ namespace School_Management.Manager.Course
             // 
             // WindowsUIButtonPanel
             // 
+            this.WindowsUIButtonPanel.BackColor = System.Drawing.Color.LightBlue;
+            windowsUIButtonImageOptions1.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("windowsUIButtonImageOptions1.SvgImage")));
+            windowsUIButtonImageOptions2.Image = ((System.Drawing.Image)(resources.GetObject("windowsUIButtonImageOptions2.Image")));
+            windowsUIButtonImageOptions3.Image = ((System.Drawing.Image)(resources.GetObject("windowsUIButtonImageOptions3.Image")));
+            windowsUIButtonImageOptions4.Image = ((System.Drawing.Image)(resources.GetObject("windowsUIButtonImageOptions4.Image")));
+            this.WindowsUIButtonPanel.Buttons.AddRange(new DevExpress.XtraEditors.ButtonPanel.IBaseButton[] {
+            new DevExpress.XtraBars.Docking2010.WindowsUIButton("Add", true, windowsUIButtonImageOptions1, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", -1, true, null, true, false, true, "A1", -1, false),
+            new DevExpress.XtraBars.Docking2010.WindowsUIButton("Update", true, windowsUIButtonImageOptions2, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", -1, true, null, true, false, true, "A2", -1, false),
+            new DevExpress.XtraBars.Docking2010.WindowsUIButton("Delete", true, windowsUIButtonImageOptions3, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", -1, true, null, true, false, true, "A3", -1, false),
+            new DevExpress.XtraBars.Docking2010.WindowsUIButton("Refresh", true, windowsUIButtonImageOptions4, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", -1, true, null, true, false, true, "A4", -1, false)});
             this.WindowsUIButtonPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.WindowsUIButtonPanel.Location = new System.Drawing.Point(0, 357);
             this.WindowsUIButtonPanel.Name = "WindowsUIButtonPanel";
@@ -225,7 +325,7 @@ namespace School_Management.Manager.Course
             // xtraTabPage2
             // 
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(451, 425);
+            this.xtraTabPage2.Size = new System.Drawing.Size(493, 425);
             this.xtraTabPage2.Text = "xtraTabPage2";
             // 
             // courseTableAdapter
@@ -241,23 +341,78 @@ namespace School_Management.Manager.Course
             this.tableAdapterManager.NameTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = School_Management.Manager_StudentDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // NavigatorMoveFirstItem
+            // courseBindingNavigator
             // 
-            this.NavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.NavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("NavigatorMoveFirstItem.Image")));
-            this.NavigatorMoveFirstItem.Name = "NavigatorMoveFirstItem";
-            this.NavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.NavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
-            this.NavigatorMoveFirstItem.Text = "Move first";
+            this.courseBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.courseBindingNavigator.BindingSource = this.courseBindingSource;
+            this.courseBindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.courseBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.courseBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bindingNavigatorMoveFirstItem,
+            this.bindingNavigatorMovePreviousItem,
+            this.bindingNavigatorSeparator,
+            this.bindingNavigatorPositionItem,
+            this.bindingNavigatorCountItem,
+            this.bindingNavigatorSeparator1,
+            this.bindingNavigatorMoveNextItem,
+            this.bindingNavigatorMoveLastItem,
+            this.bindingNavigatorSeparator2,
+            this.bindingNavigatorAddNewItem,
+            this.bindingNavigatorDeleteItem,
+            this.courseBindingNavigatorSaveItem});
+            this.courseBindingNavigator.Location = new System.Drawing.Point(0, 0);
+            this.courseBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.courseBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.courseBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.courseBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.courseBindingNavigator.Name = "courseBindingNavigator";
+            this.courseBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+            this.courseBindingNavigator.Size = new System.Drawing.Size(933, 25);
+            this.courseBindingNavigator.TabIndex = 1;
+            this.courseBindingNavigator.Text = "bindingNavigator1";
             // 
-            // NavigatorMovePreviousItem
+            // bindingNavigatorAddNewItem
             // 
-            this.NavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.NavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("NavigatorMovePreviousItem.Image")));
-            this.NavigatorMovePreviousItem.Name = "NavigatorMovePreviousItem";
-            this.NavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.NavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
-            this.NavigatorMovePreviousItem.Text = "Move previous";
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
+            // 
+            // bindingNavigatorMoveFirstItem
+            // 
+            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem.Text = "Move first";
+            // 
+            // bindingNavigatorMovePreviousItem
+            // 
+            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
@@ -268,119 +423,68 @@ namespace School_Management.Manager.Course
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
-            // NavigatorMoveNextItem
+            // bindingNavigatorMoveNextItem
             // 
-            this.NavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.NavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("NavigatorMoveNextItem.Image")));
-            this.NavigatorMoveNextItem.Name = "NavigatorMoveNextItem";
-            this.NavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.NavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
-            this.NavigatorMoveNextItem.Text = "Move next";
+            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
-            // NavigatorMoveLastItem
+            // bindingNavigatorMoveLastItem
             // 
-            this.NavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.NavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("NavigatorMoveLastItem.Image")));
-            this.NavigatorMoveLastItem.Name = "NavigatorMoveLastItem";
-            this.NavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.NavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
-            this.NavigatorMoveLastItem.Text = "Move last";
+            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
-            // NavigatorAddNewItem
+            // courseBindingNavigatorSaveItem
             // 
-            this.NavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.NavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("NavigatorAddNewItem.Image")));
-            this.NavigatorAddNewItem.Name = "NavigatorAddNewItem";
-            this.NavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.NavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.NavigatorAddNewItem.Text = "Add new";
-            // 
-            // NavigatorDeleteItem
-            // 
-            this.NavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.NavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("NavigatorDeleteItem.Image")));
-            this.NavigatorDeleteItem.Name = "NavigatorDeleteItem";
-            this.NavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.NavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.NavigatorDeleteItem.Text = "Delete";
-            // 
-            // BindingNavigatorSaveItem
-            // 
-            this.BindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.BindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("BindingNavigatorSaveItem.Image")));
-            this.BindingNavigatorSaveItem.Name = "BindingNavigatorSaveItem";
-            this.BindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
-            this.BindingNavigatorSaveItem.Text = "Save Data";
-            this.BindingNavigatorSaveItem.Click += new System.EventHandler(this.BindingNavigatorSaveItem_Click);
-            // 
-            // BindingNavigator
-            // 
-            this.BindingNavigator.AddNewItem = this.NavigatorAddNewItem;
-            this.BindingNavigator.BindingSource = this.courseBindingSource;
-            this.BindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.BindingNavigator.DeleteItem = this.NavigatorDeleteItem;
-            this.BindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.NavigatorMoveFirstItem,
-            this.NavigatorMovePreviousItem,
-            this.bindingNavigatorSeparator,
-            this.bindingNavigatorPositionItem,
-            this.bindingNavigatorCountItem,
-            this.bindingNavigatorSeparator1,
-            this.NavigatorMoveNextItem,
-            this.NavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
-            this.NavigatorAddNewItem,
-            this.NavigatorDeleteItem,
-            this.BindingNavigatorSaveItem});
-            this.BindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.BindingNavigator.MoveFirstItem = this.NavigatorMoveFirstItem;
-            this.BindingNavigator.MoveLastItem = this.NavigatorMoveLastItem;
-            this.BindingNavigator.MoveNextItem = this.NavigatorMoveNextItem;
-            this.BindingNavigator.MovePreviousItem = this.NavigatorMovePreviousItem;
-            this.BindingNavigator.Name = "BindingNavigator";
-            this.BindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.BindingNavigator.Size = new System.Drawing.Size(933, 25);
-            this.BindingNavigator.TabIndex = 1;
+            this.courseBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.courseBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("courseBindingNavigatorSaveItem.Image")));
+            this.courseBindingNavigatorSaveItem.Name = "courseBindingNavigatorSaveItem";
+            this.courseBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
+            this.courseBindingNavigatorSaveItem.Text = "Save Data";
+            this.courseBindingNavigatorSaveItem.Click += new System.EventHandler(this.courseBindingNavigatorSaveItem_Click);
             // 
             // Manager_Course
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(933, 453);
-            this.Controls.Add(this.BindingNavigator);
+            this.Controls.Add(this.courseBindingNavigator);
             this.Controls.Add(this.splitContainerControl1);
             this.Name = "Manager_Course";
             this.Text = "Manager Course";
             this.Load += new System.EventHandler(this.Manager_Course_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).EndInit();
-            this.splitContainerControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.TileView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CourseGridControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.courseBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.manager_StudentDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CardView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LayoutView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewCard1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).EndInit();
+            this.splitContainerControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
             this.XtraTabPage.ResumeLayout(false);
@@ -388,9 +492,9 @@ namespace School_Management.Manager.Course
             ((System.ComponentModel.ISupportInitialize)(this.Period)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Name_Course.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ID_Course.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BindingNavigator)).EndInit();
-            this.BindingNavigator.ResumeLayout(false);
-            this.BindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.courseBindingNavigator)).EndInit();
+            this.courseBindingNavigator.ResumeLayout(false);
+            this.courseBindingNavigator.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -399,12 +503,6 @@ namespace School_Management.Manager.Course
         #endregion
 
         private DevExpress.XtraEditors.SplitContainerControl splitContainerControl1;
-        private Manager_StudentDataSet manager_StudentDataSet;
-        private System.Windows.Forms.BindingSource courseBindingSource;
-        private Manager_StudentDataSetTableAdapters.CourseTableAdapter courseTableAdapter;
-        private Manager_StudentDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private DevExpress.XtraGrid.GridControl CourseGridControl;
-        private DevExpress.XtraGrid.Views.Card.CardView CardView;
         private DevExpress.XtraTab.XtraTabControl xtraTabControl1;
         private DevExpress.XtraTab.XtraTabPage XtraTabPage;
         private DevExpress.XtraEditors.TextEdit Name_Course;
@@ -414,21 +512,35 @@ namespace School_Management.Manager.Course
         private DevExpress.XtraEditors.LabelControl Name_lb;
         private DevExpress.XtraEditors.LabelControl ID_lb;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage2;
-        private System.Windows.Forms.ToolStripButton NavigatorMoveFirstItem;
-        private System.Windows.Forms.ToolStripButton NavigatorMovePreviousItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
-        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
-        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
-        private System.Windows.Forms.ToolStripButton NavigatorMoveNextItem;
-        private System.Windows.Forms.ToolStripButton NavigatorMoveLastItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton NavigatorAddNewItem;
-        private System.Windows.Forms.ToolStripButton NavigatorDeleteItem;
-        private System.Windows.Forms.ToolStripButton BindingNavigatorSaveItem;
-        private System.Windows.Forms.BindingNavigator BindingNavigator;
         private System.Windows.Forms.RichTextBox Rich_Description;
         private DevExpress.XtraBars.Docking2010.WindowsUIButtonPanel WindowsUIButtonPanel;
         private System.Windows.Forms.NumericUpDown Period;
+        private Manager_StudentDataSet manager_StudentDataSet;
+        private System.Windows.Forms.BindingSource courseBindingSource;
+        private Manager_StudentDataSetTableAdapters.CourseTableAdapter courseTableAdapter;
+        private Manager_StudentDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.BindingNavigator courseBindingNavigator;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
+        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
+        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
+        private System.Windows.Forms.ToolStripButton courseBindingNavigatorSaveItem;
+        private DevExpress.XtraGrid.GridControl CourseGridControl;
+        private DevExpress.XtraGrid.Views.Tile.TileView TileView;
+        private DevExpress.XtraGrid.Views.Layout.LayoutView LayoutView;
+        private DevExpress.XtraGrid.Views.Card.CardView CardView;
+        private DevExpress.XtraGrid.Views.Grid.GridView GridView;
+        private DevExpress.XtraGrid.Columns.GridColumn GridColumn;
+        private DevExpress.XtraGrid.Columns.GridColumn GridColumn1;
+        private DevExpress.XtraGrid.Columns.GridColumn GridColumn3;
+        private DevExpress.XtraGrid.Columns.GridColumn GridColumn4;
+        private DevExpress.XtraGrid.Views.Layout.LayoutViewCard layoutViewCard1;
     }
 }

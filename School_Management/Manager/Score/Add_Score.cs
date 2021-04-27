@@ -8,16 +8,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using School_Management.Manager.Course;
+using School_Management.Manager.Student;
 namespace School_Management.Manager.Score
 {
-    public partial class Add_Course : DevExpress.XtraEditors.XtraForm
+    public partial class Add_Score : DevExpress.XtraEditors.XtraForm
     {
-        public Add_Course()
+        public Add_Score()
         {
             InitializeComponent();
         }
-
+        Students student = new Students();
+        Courses course = new Courses();
+        Scores score = new Scores();
         private void add_StudentBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
@@ -30,6 +33,10 @@ namespace School_Management.Manager.Score
         {
             // TODO: This line of code loads data into the 'manager_StudentDataSet.Add_Student' table. You can move, or remove it, as needed.
             this.add_StudentTableAdapter.Fill(this.manager_StudentDataSet.Add_Student);
+            //StudentGridControl.DataSource = score.GetStudentScore();
+            ComboBox_Course.DataSource = course.GetAllCourses();
+            ComboBox_Course.DisplayMember = "lable";
+            ComboBox_Course.ValueMember = "id";
 
         }
     }

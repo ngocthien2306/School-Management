@@ -118,6 +118,23 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="windowsUIButtonImageOptions1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAD3RFWHRUaXRsZQBCYWNrO1By
+        ZXY9XJfJAAACcElEQVRYR8WXv0odQRTGTSW3lCiIYGeXzjKdrXgbEZGkSJWQNAGfQLEWa1/BNxDufQPR
+        /IEQCATsUqQJBCKGmM33W+aTuePs3vEa3eIn7jnfOXN298yZvVNVVXVK/ae/d1zCgtgSB2IozsVFgP+x
+        4UODNpdjhNICnohd8UFUhaAlhthczppxBTwSr8WpIOlfMRA7Yk0siV6A/7HhQ4OWGGLJQa4ba7QVMC/2
+        he/oSKyjLQFtiHE8ucg5sg5aB8QgPBQEfhXbYjpeoARiQiw5yEXOkSLQWWx4VL7zd2IjTjoJ5Ai5/CSu
+        Xwd+iwzvy3d+58UNuUJOcrNGtgA61g23HSdIkb8vLoPWfBGLOT3Ix+tAxxr17sBuJ7BtENA8je9cPhos
+        XfyzWMjpjfz0hBuTtWq7nQwO9i7bp7Hb5dsUv0W8+Ccxn9OnSEfxrMFadcF2ML1INogDYuR7Jv4EnSHR
+        XE7fhPTMCWK3uLaREYpxJxYb2V+IdPEz8Tinb0MxDCviD7i2kTmOcS0WB99LcRX85kTMpNoSFMfEJMeQ
+        axs5TDAuJeI3wmN1YpKcjG3s51zbyImGsRcJ34o7Lw7OGfJydmC/4LqtgFciffQT4Zwhb7aAplfwXKTN
+        d2uSnNlX0NaEucEz0Q4AxWWbcNw2XBW/gsZwwPy3bVgyiFbEz6CLi5jN6ZuQPjuISkfxU/FDxEW8F0XT
+        ULrGUQylh9Gy+B60xUXI33oYwW2OY7TfgtZ8FI1FyDf2OIZOP0ig808y6PSj1CD0kwCa58E+yw2Pivfl
+        xmT7PNgPkxg6lm3D3vUdjQMtMXW3N1FagLm/H6fdUU39A2dK1oqEumnbAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="Save_bt.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAt0RVh0VGl0
@@ -422,4 +439,7 @@
         x0O08t4nYcgeuILKv8DLdzGJLB/6pHVQWnpYUnpYUnpYUnpYTjXwH6L8vTFgP7MKAAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="ToolTip_id.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

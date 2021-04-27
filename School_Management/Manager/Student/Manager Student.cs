@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using School_Management.Manager.Course;
+using School_Management.Manager.Score;
 namespace School_Management.Manager.Student
 {
     public partial class Manager_Student : DevExpress.XtraBars.Ribbon.RibbonForm
@@ -124,6 +125,12 @@ namespace School_Management.Manager.Student
             {
                 MessageBox.Show("The information a new record is blank. Please enter again!", "Profile", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void M030101_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Add_Score add = new Add_Score();
+            add.ShowDialog();
         }
     }
 }

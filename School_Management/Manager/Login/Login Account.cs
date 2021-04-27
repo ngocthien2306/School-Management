@@ -55,5 +55,18 @@ namespace School_Management.Manager.Login
         private void Pass_tb_EditValueChanged(object sender, EventArgs e)
         {
         }
+
+        private void WindowsUIButtonPanel_Click(object sender, EventArgs e)
+        {
+            DialogResult exit = MessageBox.Show("Do you want to close program?", "Close Program", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (exit == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            else
+            {
+
+            }
+        }
     }
 }

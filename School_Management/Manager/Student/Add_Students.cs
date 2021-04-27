@@ -18,17 +18,6 @@ namespace School_Management.Manager.Student
         {
             InitializeComponent();
         }
-
-        private void labelControl1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void IdStudent_lb_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Add_Students_Load(object sender, EventArgs e)
         {
 
@@ -56,50 +45,52 @@ namespace School_Management.Manager.Student
                 Picture_Student.Image = Image.FromFile(open.FileName);
             }
         }
-
-        private void UIButtonPanel_Click(object sender, EventArgs e)
-        {
- 
-        }
         public void AddStudent()
         {
-            Student student = new Student();
-            int Id = Convert.ToInt32(ID_student.Text);
-            string firstname = this.Firstname.Text;
-            string lastname = this.Lastname.Text;
-            DateTime birthday = Birthday_picker.DateTime;
-            string phone = this.Phone_student.Text;
-            string address = this.Address_student.Text;
-            string gender = "Female";
-            if (Check_male.Checked == true)
+            try
             {
-                Check_female.Checked = false;
-                gender = "Male";
-            }
-
-            MemoryStream pic = new MemoryStream();
-            //int born_year = Convert.ToInt32(Birthday_picker.ToString());
-            //int this_year = DateTime.Now.Year;
-            //if (this_year - born_year < 10 || this_year - born_year > 100)
-            //{
-            //    MessageBox.Show("The student age must be 10 to 100 year", "Invalid Birthday", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
-            if (!Check())
-            {
-                Picture_Student.Image.Save(pic, Picture_Student.Image.RawFormat);
-                if (student.AddStudent(Id, firstname, lastname, birthday, gender, address, phone, pic))
+                Students student = new Students();
+                int Id = Convert.ToInt32(ID_student.Text);
+                string firstname = this.Firstname.Text;
+                string lastname = this.Lastname.Text;
+                DateTime birthday = Birthday_picker.DateTime;
+                string phone = this.Phone_student.Text;
+                string address = this.Address_student.Text;
+                string gender = "Female";
+                if (Check_male.Checked == true)
                 {
-                    MessageBox.Show("New student added", "Add student", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Check_female.Checked = false;
+                    gender = "Male";
+                }
 
+                MemoryStream pic = new MemoryStream();
+                //int born_year = Convert.ToInt32(Birthday_picker.ToString());
+                //int this_year = DateTime.Now.Year;
+                //if (this_year - born_year < 10 || this_year - born_year > 100)
+                //{
+                //    MessageBox.Show("The student age must be 10 to 100 year", "Invalid Birthday", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //}
+                if (!Check())
+                {
+                    Picture_Student.Image.Save(pic, Picture_Student.Image.RawFormat);
+                    if (student.AddStudent(Id, firstname, lastname, birthday, gender, address, phone, pic))
+                    {
+                        MessageBox.Show("New student added", "Add student", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error", "Add student", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Error", "Add student", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Empty fields", "Add student", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }
-            else
+            catch
             {
-                MessageBox.Show("Empty fields", "Add student", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Error! Please check the Cotrol", "Add Student", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private void Save_bt_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

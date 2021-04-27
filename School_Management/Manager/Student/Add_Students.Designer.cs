@@ -29,9 +29,10 @@ namespace School_Management.Manager.Student
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions windowsUIButtonImageOptions1 = new DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_Students));
             this.windowsUIButtonPanel1 = new DevExpress.XtraBars.Docking2010.WindowsUIButtonPanel();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.Picture_Student = new DevExpress.XtraEditors.PictureEdit();
             this.IdStudent_lb = new DevExpress.XtraEditors.LabelControl();
             this.Fname_lb = new DevExpress.XtraEditors.LabelControl();
@@ -63,6 +64,7 @@ namespace School_Management.Manager.Student
             this.Close_bt = new DevExpress.XtraBars.BarButtonItem();
             this.Method01 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.Method0101 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ToolTip_id = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.Picture_Student.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ID_student.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Firstname.Properties)).BeginInit();
@@ -83,28 +85,16 @@ namespace School_Management.Manager.Student
             // 
             // windowsUIButtonPanel1
             // 
+            windowsUIButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("windowsUIButtonImageOptions1.Image")));
             this.windowsUIButtonPanel1.Buttons.AddRange(new DevExpress.XtraEditors.ButtonPanel.IBaseButton[] {
-            new DevExpress.XtraBars.Docking2010.WindowsUIButton(),
+            new DevExpress.XtraBars.Docking2010.WindowsUIButton("Back", true, windowsUIButtonImageOptions1, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", -1, true, null, true, false, true, null, -1, false),
             new DevExpress.XtraBars.Docking2010.WindowsUIButton()});
             this.windowsUIButtonPanel1.ContentAlignment = System.Drawing.ContentAlignment.TopCenter;
-            this.windowsUIButtonPanel1.Location = new System.Drawing.Point(0, 147);
+            this.windowsUIButtonPanel1.Location = new System.Drawing.Point(0, 143);
             this.windowsUIButtonPanel1.Name = "windowsUIButtonPanel1";
-            this.windowsUIButtonPanel1.Size = new System.Drawing.Size(75, 271);
+            this.windowsUIButtonPanel1.Size = new System.Drawing.Size(75, 312);
             this.windowsUIButtonPanel1.TabIndex = 1;
             this.windowsUIButtonPanel1.Text = "windowsUIButtonPanel1";
-            // 
-            // labelControl1
-            // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.Silver;
-            this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Appearance.Options.UseForeColor = true;
-            this.labelControl1.Location = new System.Drawing.Point(133, 108);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(99, 35);
-            this.labelControl1.TabIndex = 2;
-            this.labelControl1.Text = "Student";
-            this.labelControl1.Click += new System.EventHandler(this.labelControl1_Click);
             // 
             // Picture_Student
             // 
@@ -121,7 +111,6 @@ namespace School_Management.Manager.Student
             this.IdStudent_lb.Size = new System.Drawing.Size(52, 13);
             this.IdStudent_lb.TabIndex = 4;
             this.IdStudent_lb.Text = "Student ID";
-            this.IdStudent_lb.Click += new System.EventHandler(this.IdStudent_lb_Click);
             // 
             // Fname_lb
             // 
@@ -380,6 +369,10 @@ namespace School_Management.Manager.Student
             this.Method0101.Name = "Method0101";
             this.Method0101.Text = "Task";
             // 
+            // ToolTip_id
+            // 
+            this.ToolTip_id.ToolTipTitle = "Just number";
+            // 
             // Add_Students
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
@@ -396,7 +389,6 @@ namespace School_Management.Manager.Student
             this.Controls.Add(this.Fname_lb);
             this.Controls.Add(this.IdStudent_lb);
             this.Controls.Add(this.Picture_Student);
-            this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.windowsUIButtonPanel1);
             this.Controls.Add(this.Ribbon_Control);
             this.Name = "Add_Students";
@@ -427,7 +419,6 @@ namespace School_Management.Manager.Student
         }
 
         #endregion
-        private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage2;
         private DevExpress.XtraEditors.TextEdit textEdit1;
         private DevExpress.XtraEditors.LabelControl Email_lb;
@@ -460,5 +451,6 @@ namespace School_Management.Manager.Student
         private DevExpress.XtraBars.BarButtonItem Reset;
         private DevExpress.XtraBars.BarButtonItem Delete_bt;
         private DevExpress.XtraBars.BarButtonItem Close_bt;
+        private System.Windows.Forms.ToolTip ToolTip_id;
     }
 }

@@ -18,6 +18,7 @@ namespace School_Management.Manager.Student
 {
     public partial class Print_List_Student : DevExpress.XtraEditors.XtraForm
     {
+        Students student = new Students();
         public Print_List_Student()
         {
             InitializeComponent();
@@ -139,7 +140,6 @@ namespace School_Management.Manager.Student
                 throw;
             }
         }
-        Student student = new Student();
         private void ButtonCheck()
         {
             if (Yes_Check.Checked)

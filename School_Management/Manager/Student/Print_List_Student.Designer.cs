@@ -235,7 +235,7 @@ namespace School_Management.Manager.Student
             this.TabControl1.Name = "TabControl1";
             this.TabControl1.SelectedTabPage = this.TabPage2;
             this.TabControl1.Size = new System.Drawing.Size(846, 97);
-            this.TabControl1.TabIndex = 2;
+            this.TabControl1.TabIndex = 1;
             this.TabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.TabPage1,
             this.TabPage2});

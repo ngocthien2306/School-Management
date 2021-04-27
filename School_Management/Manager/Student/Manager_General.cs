@@ -27,7 +27,7 @@ namespace School_Management.Manager.Student
         private void Add_bt_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             Add_Students add = new Add_Students();
-            Student student = new Student();
+            Students student = new Students();
             int Id = Convert.ToInt32(ID_student.Text);
             string firstname = this.Firstname.Text;
             string lastname = this.Lastname.Text;
@@ -205,7 +205,7 @@ namespace School_Management.Manager.Student
         }
         private void TotalStudent()
         {
-            Student student = new Student();
+            Students student = new Students();
             double total = Convert.ToDouble(student.TotalStudent());
             Label_Total.Text = "Total of Student " + total;
         }
@@ -229,7 +229,7 @@ namespace School_Management.Manager.Student
                 MessageBox.Show("Wrong! You should enter keyword to search", "Search Student", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else {
-                Student student = new Student();
+                Students student = new Students();
                 DataTable table = student.FindByHint(Find_tb.Text);
                 table = student.StudentsTableNaming(table);
                 DataSource_Student.RowTemplate.Height = 80;

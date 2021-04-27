@@ -40,7 +40,7 @@ namespace School_Management.Manager.Student
                 command.Parameters.Add("@address", SqlDbType.NVarChar).Value = ID_student.Text;
 
                 dataBase.Openconnection();
-                Student student = new Student();
+                Students student = new Students();
                 DataTable table = student.GetStudents(command);
                 if (table.Rows.Count > 0)
                 {
