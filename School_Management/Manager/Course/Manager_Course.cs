@@ -56,8 +56,9 @@ namespace School_Management.Manager.Course
                 navButton.Style = ButtonStyle.CheckButton;
                 navButton.GroupIndex = 1;
                 navButton.UseCaption = true;
+
             }
-            WindowsUIButtonPanel.ButtonChecked += WindowsUIButtonPanel_ButtonChecked;
+            
         }
         Courses course = new Courses();
         private void Manager_Course_Load(object sender, EventArgs e)

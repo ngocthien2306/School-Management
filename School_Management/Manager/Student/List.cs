@@ -33,5 +33,10 @@ namespace School_Management.Manager.Student
             this.add_StudentTableAdapter.Fill(this.manager_StudentDataSet.Add_Student);
 
         }
+
+        private void courseBindingNavigator_RefreshItems(object sender, EventArgs e)
+        {
+
+        }
     }
 }

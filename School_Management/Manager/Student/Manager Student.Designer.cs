@@ -55,6 +55,9 @@ namespace School_Management.Manager.Student
             this.M020205 = new DevExpress.XtraBars.BarButtonItem();
             this.M020301 = new DevExpress.XtraBars.SkinPaletteDropDownButtonItem();
             this.SkinRibbonGalleryBarItem = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
+            this.M030101 = new DevExpress.XtraBars.BarButtonItem();
+            this.M030102 = new DevExpress.XtraBars.BarButtonItem();
+            this.M030103 = new DevExpress.XtraBars.BarButtonItem();
             this.M01 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.M0101 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.M0102 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -72,9 +75,6 @@ namespace School_Management.Manager.Student
             this.manager_StudentDataSet = new School_Management.Manager_StudentDataSet();
             this.add_StudentTableAdapter = new School_Management.Manager_StudentDataSetTableAdapters.Add_StudentTableAdapter();
             this.tableAdapterManager = new School_Management.Manager_StudentDataSetTableAdapters.TableAdapterManager();
-            this.M030101 = new DevExpress.XtraBars.BarButtonItem();
-            this.M030102 = new DevExpress.XtraBars.BarButtonItem();
-            this.M030103 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.add_StudentBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.manager_StudentDataSet)).BeginInit();
@@ -303,6 +303,27 @@ namespace School_Management.Manager.Student
             this.SkinRibbonGalleryBarItem.Id = 27;
             this.SkinRibbonGalleryBarItem.Name = "SkinRibbonGalleryBarItem";
             // 
+            // M030101
+            // 
+            this.M030101.Caption = "Manager Score";
+            this.M030101.Id = 28;
+            this.M030101.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("M030101.ImageOptions.SvgImage")));
+            this.M030101.Name = "M030101";
+            this.M030101.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.M030101_ItemClick);
+            // 
+            // M030102
+            // 
+            this.M030102.Caption = "Add Score";
+            this.M030102.Id = 29;
+            this.M030102.Name = "M030102";
+            this.M030102.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.M030102_ItemClick);
+            // 
+            // M030103
+            // 
+            this.M030103.Caption = "Update";
+            this.M030103.Id = 30;
+            this.M030103.Name = "M030103";
+            // 
             // M01
             // 
             this.M01.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -428,26 +449,6 @@ namespace School_Management.Manager.Student
             this.tableAdapterManager.LoginTableAdapter = null;
             this.tableAdapterManager.NameTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = School_Management.Manager_StudentDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // M030101
-            // 
-            this.M030101.Caption = "Manager Score";
-            this.M030101.Id = 28;
-            this.M030101.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("M030101.ImageOptions.SvgImage")));
-            this.M030101.Name = "M030101";
-            this.M030101.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.M030101_ItemClick);
-            // 
-            // M030102
-            // 
-            this.M030102.Caption = "Add Score";
-            this.M030102.Id = 29;
-            this.M030102.Name = "M030102";
-            // 
-            // M030103
-            // 
-            this.M030103.Caption = "Update";
-            this.M030103.Id = 30;
-            this.M030103.Name = "M030103";
             // 
             // Manager_Student
             // 

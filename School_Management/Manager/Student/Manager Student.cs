@@ -118,7 +118,7 @@ namespace School_Management.Manager.Student
         {
             try
             {
-                Manager_Course manager = new Manager_Course();
+                Manager.Course.Manager manager = new Manager.Course.Manager();
                 manager.ShowDialog();
             }
             catch
@@ -131,6 +131,12 @@ namespace School_Management.Manager.Student
         {
             Add_Score add = new Add_Score();
             add.ShowDialog();
+        }
+
+        private void M030102_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Manager_Course manager = new Manager_Course();
+            manager.ShowDialog();
         }
     }
 }

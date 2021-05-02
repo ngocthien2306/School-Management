@@ -45,11 +45,16 @@ namespace School_Management.Manager.Course
             this.CardView = new DevExpress.XtraGrid.Views.Card.CardView();
             this.LayoutView = new DevExpress.XtraGrid.Views.Layout.LayoutView();
             this.layoutViewCard1 = new DevExpress.XtraGrid.Views.Layout.LayoutViewCard();
-            this.GridView = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.GridColumn = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.GridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.GridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.GridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.layoutView1 = new DevExpress.XtraGrid.Views.Layout.LayoutView();
+            this.GridColumn = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
+            this.layoutViewField_GridColumn = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.GridColumn1 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
+            this.layoutViewField_GridColumn1 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.GridColumn3 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
+            this.layoutViewField_GridColumn3 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.GridColumn4 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
+            this.layoutViewField_GridColumn4 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.layoutViewCard2 = new DevExpress.XtraGrid.Views.Layout.LayoutViewCard();
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.XtraTabPage = new DevExpress.XtraTab.XtraTabPage();
@@ -85,7 +90,12 @@ namespace School_Management.Manager.Course
             ((System.ComponentModel.ISupportInitialize)(this.CardView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LayoutView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewCard1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_GridColumn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_GridColumn1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_GridColumn3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_GridColumn4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewCard2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
@@ -117,14 +127,14 @@ namespace School_Management.Manager.Course
             gridLevelNode2,
             gridLevelNode3});
             this.CourseGridControl.Location = new System.Drawing.Point(0, 28);
-            this.CourseGridControl.MainView = this.GridView;
+            this.CourseGridControl.MainView = this.layoutView1;
             this.CourseGridControl.Name = "CourseGridControl";
             this.CourseGridControl.Size = new System.Drawing.Size(429, 425);
             this.CourseGridControl.TabIndex = 0;
             this.CourseGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.CardView,
             this.LayoutView,
-            this.GridView,
+            this.layoutView1,
             this.TileView});
             // 
             // courseBindingSource
@@ -154,48 +164,86 @@ namespace School_Management.Manager.Course
             this.layoutViewCard1.HeaderButtonsLocation = DevExpress.Utils.GroupElementLocation.AfterText;
             this.layoutViewCard1.Name = "layoutViewTemplateCard";
             // 
-            // GridView
+            // layoutView1
             // 
-            this.GridView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.layoutView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.LayoutViewColumn[] {
             this.GridColumn,
             this.GridColumn1,
             this.GridColumn3,
             this.GridColumn4});
-            this.GridView.GridControl = this.CourseGridControl;
-            this.GridView.Name = "GridView";
-            this.GridView.VertScrollVisibility = DevExpress.XtraGrid.Views.Base.ScrollVisibility.Never;
+            this.layoutView1.GridControl = this.CourseGridControl;
+            this.layoutView1.Name = "layoutView1";
+            this.layoutView1.TemplateCard = this.layoutViewCard2;
             // 
             // GridColumn
             // 
             this.GridColumn.Caption = "ID";
             this.GridColumn.FieldName = "Id";
+            this.GridColumn.LayoutViewField = this.layoutViewField_GridColumn;
             this.GridColumn.Name = "GridColumn";
-            this.GridColumn.Visible = true;
-            this.GridColumn.VisibleIndex = 0;
+            // 
+            // layoutViewField_GridColumn
+            // 
+            this.layoutViewField_GridColumn.EditorPreferredWidth = 114;
+            this.layoutViewField_GridColumn.Location = new System.Drawing.Point(0, 0);
+            this.layoutViewField_GridColumn.Name = "layoutViewField_GridColumn";
+            this.layoutViewField_GridColumn.Size = new System.Drawing.Size(203, 24);
+            this.layoutViewField_GridColumn.TextSize = new System.Drawing.Size(81, 13);
             // 
             // GridColumn1
             // 
             this.GridColumn1.Caption = "Name of Course";
             this.GridColumn1.FieldName = "lable";
+            this.GridColumn1.LayoutViewField = this.layoutViewField_GridColumn1;
             this.GridColumn1.Name = "GridColumn1";
-            this.GridColumn1.Visible = true;
-            this.GridColumn1.VisibleIndex = 1;
+            // 
+            // layoutViewField_GridColumn1
+            // 
+            this.layoutViewField_GridColumn1.EditorPreferredWidth = 114;
+            this.layoutViewField_GridColumn1.Location = new System.Drawing.Point(0, 24);
+            this.layoutViewField_GridColumn1.Name = "layoutViewField_GridColumn1";
+            this.layoutViewField_GridColumn1.Size = new System.Drawing.Size(203, 24);
+            this.layoutViewField_GridColumn1.TextSize = new System.Drawing.Size(81, 13);
             // 
             // GridColumn3
             // 
             this.GridColumn3.Caption = "Period";
             this.GridColumn3.FieldName = "period";
+            this.GridColumn3.LayoutViewField = this.layoutViewField_GridColumn3;
             this.GridColumn3.Name = "GridColumn3";
-            this.GridColumn3.Visible = true;
-            this.GridColumn3.VisibleIndex = 2;
+            // 
+            // layoutViewField_GridColumn3
+            // 
+            this.layoutViewField_GridColumn3.EditorPreferredWidth = 114;
+            this.layoutViewField_GridColumn3.Location = new System.Drawing.Point(0, 48);
+            this.layoutViewField_GridColumn3.Name = "layoutViewField_GridColumn3";
+            this.layoutViewField_GridColumn3.Size = new System.Drawing.Size(203, 24);
+            this.layoutViewField_GridColumn3.TextSize = new System.Drawing.Size(81, 13);
             // 
             // GridColumn4
             // 
             this.GridColumn4.Caption = "Description";
             this.GridColumn4.FieldName = "description";
+            this.GridColumn4.LayoutViewField = this.layoutViewField_GridColumn4;
             this.GridColumn4.Name = "GridColumn4";
-            this.GridColumn4.Visible = true;
-            this.GridColumn4.VisibleIndex = 3;
+            // 
+            // layoutViewField_GridColumn4
+            // 
+            this.layoutViewField_GridColumn4.EditorPreferredWidth = 114;
+            this.layoutViewField_GridColumn4.Location = new System.Drawing.Point(0, 72);
+            this.layoutViewField_GridColumn4.Name = "layoutViewField_GridColumn4";
+            this.layoutViewField_GridColumn4.Size = new System.Drawing.Size(203, 24);
+            this.layoutViewField_GridColumn4.TextSize = new System.Drawing.Size(81, 13);
+            // 
+            // layoutViewCard2
+            // 
+            this.layoutViewCard2.HeaderButtonsLocation = DevExpress.Utils.GroupElementLocation.AfterText;
+            this.layoutViewCard2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutViewField_GridColumn,
+            this.layoutViewField_GridColumn1,
+            this.layoutViewField_GridColumn3,
+            this.layoutViewField_GridColumn4});
+            this.layoutViewCard2.Name = "layoutViewCard2";
             // 
             // splitContainerControl1
             // 
@@ -239,7 +287,7 @@ namespace School_Management.Manager.Course
             // 
             // WindowsUIButtonPanel
             // 
-            this.WindowsUIButtonPanel.BackColor = System.Drawing.Color.LightBlue;
+            this.WindowsUIButtonPanel.BackColor = System.Drawing.Color.Snow;
             windowsUIButtonImageOptions1.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("windowsUIButtonImageOptions1.SvgImage")));
             windowsUIButtonImageOptions2.Image = ((System.Drawing.Image)(resources.GetObject("windowsUIButtonImageOptions2.Image")));
             windowsUIButtonImageOptions3.Image = ((System.Drawing.Image)(resources.GetObject("windowsUIButtonImageOptions3.Image")));
@@ -423,6 +471,7 @@ namespace School_Management.Manager.Course
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -482,7 +531,12 @@ namespace School_Management.Manager.Course
             ((System.ComponentModel.ISupportInitialize)(this.CardView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LayoutView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewCard1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_GridColumn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_GridColumn1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_GridColumn3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_GridColumn4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewCard2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).EndInit();
             this.splitContainerControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
@@ -536,11 +590,16 @@ namespace School_Management.Manager.Course
         private DevExpress.XtraGrid.Views.Tile.TileView TileView;
         private DevExpress.XtraGrid.Views.Layout.LayoutView LayoutView;
         private DevExpress.XtraGrid.Views.Card.CardView CardView;
-        private DevExpress.XtraGrid.Views.Grid.GridView GridView;
-        private DevExpress.XtraGrid.Columns.GridColumn GridColumn;
-        private DevExpress.XtraGrid.Columns.GridColumn GridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn GridColumn3;
-        private DevExpress.XtraGrid.Columns.GridColumn GridColumn4;
         private DevExpress.XtraGrid.Views.Layout.LayoutViewCard layoutViewCard1;
+        private DevExpress.XtraGrid.Views.Layout.LayoutView layoutView1;
+        private DevExpress.XtraGrid.Columns.LayoutViewColumn GridColumn;
+        private DevExpress.XtraGrid.Views.Layout.LayoutViewField layoutViewField_GridColumn;
+        private DevExpress.XtraGrid.Columns.LayoutViewColumn GridColumn1;
+        private DevExpress.XtraGrid.Views.Layout.LayoutViewField layoutViewField_GridColumn1;
+        private DevExpress.XtraGrid.Columns.LayoutViewColumn GridColumn3;
+        private DevExpress.XtraGrid.Views.Layout.LayoutViewField layoutViewField_GridColumn3;
+        private DevExpress.XtraGrid.Columns.LayoutViewColumn GridColumn4;
+        private DevExpress.XtraGrid.Views.Layout.LayoutViewField layoutViewField_GridColumn4;
+        private DevExpress.XtraGrid.Views.Layout.LayoutViewCard layoutViewCard2;
     }
 }
