@@ -135,6 +135,11 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataSet_Student.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Student.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Manager\Course\Add_Course.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,6 +195,18 @@
     </Compile>
     <Compile Include="Manager\Score\Add_Score.Designer.cs">
       <DependentUpon>Add_Score.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Score\Avg_Score.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Score\Avg_Score.Designer.cs">
+      <DependentUpon>Avg_Score.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Score\Manager_Score.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Score\Manager_Score.Designer.cs">
+      <DependentUpon>Manager_Score.cs</DependentUpon>
     </Compile>
     <Compile Include="Manager\Score\Scores.cs" />
     <Compile Include="Manager\Student\Add_Student.cs">
@@ -409,6 +426,12 @@
     <EmbeddedResource Include="Manager\Score\Add_Score.resx">
       <DependentUpon>Add_Score.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Score\Avg_Score.resx">
+      <DependentUpon>Avg_Score.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Score\Manager_Score.resx">
+      <DependentUpon>Manager_Score.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Manager\Student\Add_Students.resx">
       <DependentUpon>Add_Students.cs</DependentUpon>
     </EmbeddedResource>
@@ -455,6 +478,17 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="DataSet_Student.xsc">
+      <DependentUpon>DataSet_Student.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Student.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Student.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet_Student.xss">
+      <DependentUpon>DataSet_Student.xsd</DependentUpon>
+    </None>
     <None Include="Manager\Student\Model.edmx.diagram">
       <DependentUpon>Model.edmx</DependentUpon>
     </None>
@@ -480,7 +514,9 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Manager\Result\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\School123.jpg" />
     <Content Include="Manager\Student\Model.Context.tt">

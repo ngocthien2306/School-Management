@@ -104,10 +104,9 @@ namespace School_Management.Manager.Student
                 data.Closeconnection();
             }
 
-            catch (Exception E)
+            catch 
             {
-                Console.WriteLine(E.Message);
-                throw;
+                MessageBox.Show("Error, Please try this again!", "Edit Student", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

@@ -45,7 +45,7 @@ namespace School_Management.Manager.Login
         }
         public bool Login(string user, string pass)
         {
-            SqlCommand command = new SqlCommand("SELECT * FROM Login where Username = @user AND Password = @pass", connect.GetConnection);
+            SqlCommand command = new SqlCommand("SELECT * FROM New_User where username = @user AND password = @pass", connect.GetConnection);
             command.Parameters.Add("@user", SqlDbType.NVarChar).Value = user;
             command.Parameters.Add("@pass", SqlDbType.NVarChar).Value = pass;
             SqlDataAdapter SDA = new SqlDataAdapter(command);
@@ -63,8 +63,8 @@ namespace School_Management.Manager.Login
         public bool Insert_User(int id, string fname, string lname, string username, string pass, MemoryStream picture)
         {
             My_Database data = new My_Database();
-            SqlCommand command = new SqlCommand("INSERT INTO New_User Id, firstname, lastname, username, password, picture " +
-                "VALUES @ID, @fname, @lname, @uname, @pass, @picture", data.GetConnection);
+            SqlCommand command = new SqlCommand("INSERT INTO New_User (Id, firstname, lastname, username, password, picture)" +
+                "VALUES (@ID, @fname, @lname, @uname, @pass, @picture)", data.GetConnection);
             command.Parameters.Add("@ID", SqlDbType.Int).Value = id;
             command.Parameters.Add("@fname", SqlDbType.NChar).Value = fname;
             command.Parameters.Add("@lname", SqlDbType.NChar).Value = lname;

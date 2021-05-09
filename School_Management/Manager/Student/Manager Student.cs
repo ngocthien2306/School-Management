@@ -46,12 +46,14 @@ namespace School_Management.Manager.Student
 
         private void Manager_Student_Load(object sender, EventArgs e)
         {
+            this.courseTableAdapter.Fill(this.dataSet_Student.Course);
+            // TODO: This line of code loads data into the 'dataSet_Student.Add_Student' table. You can move, or remove it, as needed.
+            this.add_StudentTableAdapter.Fill(this.dataSet_Student.Add_Student);
+
         }
 
         private void M010202_ItemClick(object sender, ItemClickEventArgs e)
         {
-            // TODO: This line of code loads data into the 'manager_StudentDataSet.Add_Student' table. You can move, or remove it, as needed.
-            this.add_StudentTableAdapter.Fill(this.manager_StudentDataSet.Add_Student);
             List_Student manager = new List_Student();
             manager.Show();
         }
@@ -129,14 +131,36 @@ namespace School_Management.Manager.Student
 
         private void M030101_ItemClick(object sender, ItemClickEventArgs e)
         {
-            Add_Score add = new Add_Score();
-            add.ShowDialog();
+            Manager_Score manager = new Manager_Score();
+            manager.ShowDialog();
         }
 
         private void M030102_ItemClick(object sender, ItemClickEventArgs e)
         {
+            Add_Score add = new Add_Score();
+            add.ShowDialog();
+        }
+
+        private void M030103_ItemClick(object sender, ItemClickEventArgs e)
+        {
             Manager_Course manager = new Manager_Course();
             manager.ShowDialog();
+        }
+
+        private void add_StudentBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.add_StudentBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.dataSet_Student);
+
+        }
+
+        private void add_StudentBindingNavigatorSaveItem_Click_1(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.add_StudentBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.dataSet_Student);
+
         }
     }
 }

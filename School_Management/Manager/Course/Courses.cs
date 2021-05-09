@@ -227,7 +227,7 @@ namespace School_Management.Manager.Course
             My_Database dataBase = new My_Database();
             try
             {
-                SqlCommand command = new SqlCommand("Select id, label From Courses", dataBase.GetConnection);
+                SqlCommand command = new SqlCommand("Select id, lable From Course", dataBase.GetConnection);
                 SqlDataAdapter adapter = new SqlDataAdapter();
                 adapter.SelectCommand = command;
                 DataTable table = new DataTable();

@@ -29,7 +29,11 @@ namespace School_Management.Manager.Login
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Create_Account));
+            DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions windowsUIButtonImageOptions1 = new DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions();
+            DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions windowsUIButtonImageOptions2 = new DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions();
+            DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions windowsUIButtonImageOptions3 = new DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions();
+            this.PictureUser = new DevExpress.XtraEditors.PictureEdit();
             this.First_lb = new DevExpress.XtraEditors.LabelControl();
             this.Last_lb = new DevExpress.XtraEditors.LabelControl();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
@@ -44,8 +48,10 @@ namespace School_Management.Manager.Login
             this.ID_tb = new DevExpress.XtraEditors.TextEdit();
             this.First_tb = new DevExpress.XtraEditors.TextEdit();
             this.Last_tb = new DevExpress.XtraEditors.TextEdit();
-            this.windowsUIButtonPanel1 = new DevExpress.XtraBars.Docking2010.WindowsUIButtonPanel();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
+            this.WindowsUIButtonPanel = new DevExpress.XtraBars.Docking2010.WindowsUIButtonPanel();
+            this.User = new DevExpress.XtraEditors.LabelControl();
+            this.Picture_User = new DevExpress.XtraEditors.PictureEdit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureUser.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.TabPage1.SuspendLayout();
@@ -55,19 +61,22 @@ namespace School_Management.Manager.Login
             ((System.ComponentModel.ISupportInitialize)(this.ID_tb.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.First_tb.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Last_tb.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Picture_User.Properties)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureEdit1
+            // PictureUser
             // 
-            this.pictureEdit1.Location = new System.Drawing.Point(12, 21);
-            this.pictureEdit1.Name = "pictureEdit1";
-            this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit1.Size = new System.Drawing.Size(297, 281);
-            this.pictureEdit1.TabIndex = 0;
+            this.PictureUser.EditValue = ((object)(resources.GetObject("PictureUser.EditValue")));
+            this.PictureUser.Location = new System.Drawing.Point(12, 70);
+            this.PictureUser.Name = "PictureUser";
+            this.PictureUser.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.PictureUser.Size = new System.Drawing.Size(255, 281);
+            this.PictureUser.TabIndex = 0;
+            this.PictureUser.Click += new System.EventHandler(this.PictureUser_Click);
             // 
             // First_lb
             // 
-            this.First_lb.Location = new System.Drawing.Point(336, 64);
+            this.First_lb.Location = new System.Drawing.Point(294, 110);
             this.First_lb.Name = "First_lb";
             this.First_lb.Size = new System.Drawing.Size(50, 13);
             this.First_lb.TabIndex = 1;
@@ -75,7 +84,7 @@ namespace School_Management.Manager.Login
             // 
             // Last_lb
             // 
-            this.Last_lb.Location = new System.Drawing.Point(336, 106);
+            this.Last_lb.Location = new System.Drawing.Point(294, 152);
             this.Last_lb.Name = "Last_lb";
             this.Last_lb.Size = new System.Drawing.Size(49, 13);
             this.Last_lb.TabIndex = 2;
@@ -83,10 +92,10 @@ namespace School_Management.Manager.Login
             // 
             // xtraTabControl1
             // 
-            this.xtraTabControl1.Location = new System.Drawing.Point(315, 139);
+            this.xtraTabControl1.Location = new System.Drawing.Point(273, 185);
             this.xtraTabControl1.Name = "xtraTabControl1";
             this.xtraTabControl1.SelectedTabPage = this.TabPage1;
-            this.xtraTabControl1.Size = new System.Drawing.Size(443, 163);
+            this.xtraTabControl1.Size = new System.Drawing.Size(443, 166);
             this.xtraTabControl1.TabIndex = 6;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.TabPage1});
@@ -100,7 +109,7 @@ namespace School_Management.Manager.Login
             this.TabPage1.Controls.Add(this.Pass_lb);
             this.TabPage1.Controls.Add(this.User_lb);
             this.TabPage1.Name = "TabPage1";
-            this.TabPage1.Size = new System.Drawing.Size(437, 135);
+            this.TabPage1.Size = new System.Drawing.Size(437, 138);
             this.TabPage1.Text = "User create a new account";
             // 
             // RePass_tb
@@ -150,7 +159,7 @@ namespace School_Management.Manager.Login
             // 
             // ID_lb
             // 
-            this.ID_lb.Location = new System.Drawing.Point(337, 24);
+            this.ID_lb.Location = new System.Drawing.Point(295, 70);
             this.ID_lb.Name = "ID_lb";
             this.ID_lb.Size = new System.Drawing.Size(36, 13);
             this.ID_lb.TabIndex = 6;
@@ -158,35 +167,60 @@ namespace School_Management.Manager.Login
             // 
             // ID_tb
             // 
-            this.ID_tb.Location = new System.Drawing.Point(415, 21);
+            this.ID_tb.Location = new System.Drawing.Point(373, 67);
             this.ID_tb.Name = "ID_tb";
             this.ID_tb.Size = new System.Drawing.Size(326, 20);
             this.ID_tb.TabIndex = 8;
             // 
             // First_tb
             // 
-            this.First_tb.Location = new System.Drawing.Point(414, 58);
+            this.First_tb.Location = new System.Drawing.Point(372, 104);
             this.First_tb.Name = "First_tb";
             this.First_tb.Size = new System.Drawing.Size(326, 20);
             this.First_tb.TabIndex = 9;
             // 
             // Last_tb
             // 
-            this.Last_tb.Location = new System.Drawing.Point(414, 100);
+            this.Last_tb.Location = new System.Drawing.Point(372, 146);
             this.Last_tb.Name = "Last_tb";
             this.Last_tb.Size = new System.Drawing.Size(326, 20);
             this.Last_tb.TabIndex = 10;
             // 
-            // windowsUIButtonPanel1
+            // WindowsUIButtonPanel
             // 
-            this.windowsUIButtonPanel1.Buttons.AddRange(new DevExpress.XtraEditors.ButtonPanel.IBaseButton[] {
-            new DevExpress.XtraBars.Docking2010.WindowsUIButton(),
-            new DevExpress.XtraBars.Docking2010.WindowsUIButton()});
-            this.windowsUIButtonPanel1.Location = new System.Drawing.Point(12, 320);
-            this.windowsUIButtonPanel1.Name = "windowsUIButtonPanel1";
-            this.windowsUIButtonPanel1.Size = new System.Drawing.Size(741, 66);
-            this.windowsUIButtonPanel1.TabIndex = 11;
-            this.windowsUIButtonPanel1.Text = "WindowsUIButtonPanel";
+            windowsUIButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("windowsUIButtonImageOptions1.Image")));
+            windowsUIButtonImageOptions2.Image = ((System.Drawing.Image)(resources.GetObject("windowsUIButtonImageOptions2.Image")));
+            windowsUIButtonImageOptions3.Image = ((System.Drawing.Image)(resources.GetObject("windowsUIButtonImageOptions3.Image")));
+            this.WindowsUIButtonPanel.Buttons.AddRange(new DevExpress.XtraEditors.ButtonPanel.IBaseButton[] {
+            new DevExpress.XtraBars.Docking2010.WindowsUIButton("Create a new user", true, windowsUIButtonImageOptions1, DevExpress.XtraBars.Docking2010.ButtonStyle.CheckButton, "You want to create a new user, can you click here", -1, true, null, true, false, true, "A1", 1, false),
+            new DevExpress.XtraBars.Docking2010.WindowsUIButton("Reset Change", true, windowsUIButtonImageOptions2, DevExpress.XtraBars.Docking2010.ButtonStyle.CheckButton, "Click here to clear all the page", -1, true, null, true, false, true, "A2", 1, false),
+            new DevExpress.XtraBars.Docking2010.WindowsUIButton("     Back     ", true, windowsUIButtonImageOptions3, DevExpress.XtraBars.Docking2010.ButtonStyle.CheckButton, "Click here to return before step", -1, true, null, true, false, true, "A3", 1, false)});
+            this.WindowsUIButtonPanel.Location = new System.Drawing.Point(12, 371);
+            this.WindowsUIButtonPanel.Name = "WindowsUIButtonPanel";
+            this.WindowsUIButtonPanel.Size = new System.Drawing.Size(704, 66);
+            this.WindowsUIButtonPanel.TabIndex = 11;
+            this.WindowsUIButtonPanel.Text = "WindowsUIButtonPanel";
+            this.WindowsUIButtonPanel.ButtonChecked += new DevExpress.XtraBars.Docking2010.ButtonEventHandler(this.WindowsUIButtonPanel_ButtonChecked);
+            this.WindowsUIButtonPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.WindowsUIButtonPanel_MouseClick);
+            // 
+            // User
+            // 
+            this.User.Appearance.Font = new System.Drawing.Font("Palatino Linotype", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.User.Appearance.Options.UseFont = true;
+            this.User.Location = new System.Drawing.Point(294, 12);
+            this.User.Name = "User";
+            this.User.Size = new System.Drawing.Size(121, 21);
+            this.User.TabIndex = 12;
+            this.User.Text = "User information";
+            // 
+            // Picture_User
+            // 
+            this.Picture_User.EditValue = ((object)(resources.GetObject("Picture_User.EditValue")));
+            this.Picture_User.Location = new System.Drawing.Point(87, 12);
+            this.Picture_User.Name = "Picture_User";
+            this.Picture_User.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.Picture_User.Size = new System.Drawing.Size(77, 52);
+            this.Picture_User.TabIndex = 14;
             // 
             // Create_Account
             // 
@@ -194,8 +228,10 @@ namespace School_Management.Manager.Login
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(762, 403);
-            this.Controls.Add(this.windowsUIButtonPanel1);
+            this.ClientSize = new System.Drawing.Size(724, 449);
+            this.Controls.Add(this.Picture_User);
+            this.Controls.Add(this.User);
+            this.Controls.Add(this.WindowsUIButtonPanel);
             this.Controls.Add(this.Last_tb);
             this.Controls.Add(this.First_tb);
             this.Controls.Add(this.ID_tb);
@@ -203,11 +239,11 @@ namespace School_Management.Manager.Login
             this.Controls.Add(this.Last_lb);
             this.Controls.Add(this.ID_lb);
             this.Controls.Add(this.First_lb);
-            this.Controls.Add(this.pictureEdit1);
+            this.Controls.Add(this.PictureUser);
             this.Name = "Create_Account";
             this.Text = "Create a New Account";
             this.Load += new System.EventHandler(this.Create_Account_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureUser.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
             this.TabPage1.ResumeLayout(false);
@@ -218,6 +254,7 @@ namespace School_Management.Manager.Login
             ((System.ComponentModel.ISupportInitialize)(this.ID_tb.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.First_tb.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Last_tb.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Picture_User.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -225,7 +262,7 @@ namespace School_Management.Manager.Login
 
         #endregion
 
-        private DevExpress.XtraEditors.PictureEdit pictureEdit1;
+        private DevExpress.XtraEditors.PictureEdit PictureUser;
         private DevExpress.XtraEditors.LabelControl First_lb;
         private DevExpress.XtraEditors.LabelControl Last_lb;
         private DevExpress.XtraTab.XtraTabControl xtraTabControl1;
@@ -240,6 +277,8 @@ namespace School_Management.Manager.Login
         private DevExpress.XtraEditors.TextEdit ID_tb;
         private DevExpress.XtraEditors.TextEdit First_tb;
         private DevExpress.XtraEditors.TextEdit Last_tb;
-        private DevExpress.XtraBars.Docking2010.WindowsUIButtonPanel windowsUIButtonPanel1;
+        private DevExpress.XtraBars.Docking2010.WindowsUIButtonPanel WindowsUIButtonPanel;
+        private DevExpress.XtraEditors.LabelControl User;
+        private DevExpress.XtraEditors.PictureEdit Picture_User;
     }
 }

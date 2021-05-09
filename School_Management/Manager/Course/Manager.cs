@@ -57,7 +57,7 @@ namespace School_Management.Manager.Course
 
         private void ListBoxControl_Click(object sender, EventArgs e)
         {
-            DataRowView drv = (DataRowView)ListBoxControl.SelectedItem;
+            DataRowView drview = (DataRowView)ListBoxControl.SelectedItem;
             pos = ListBoxControl.SelectedIndex;
             this.Showdata(pos);
         }
