@@ -148,11 +148,50 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet_Student.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Manager\Contact\Add_Contacts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Contact\Add_Contacts.Designer.cs">
+      <DependentUpon>Add_Contacts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Contact\Add_Student.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Manager\Contact\Contacts.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Manager\Contact\Contacts.Designer.cs">
       <DependentUpon>Contacts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Contact\Course.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Contact\Login.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Contact\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Contact\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Contact\Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Contact\Name.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Contact\Score.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Contact\sysdiagram.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Manager\Course\Add_Course.cs">
       <SubType>Form</SubType>
@@ -431,6 +470,9 @@
     <Compile Include="My_Database.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Manager\Contact\Add_Contacts.resx">
+      <DependentUpon>Add_Contacts.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Manager\Contact\Contacts.resx">
       <DependentUpon>Contacts.cs</DependentUpon>
     </EmbeddedResource>
@@ -533,6 +575,13 @@
     <None Include="DataSet_Student.xss">
       <DependentUpon>DataSet_Student.xsd</DependentUpon>
     </None>
+    <EntityDeploy Include="Manager\Contact\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Manager\Contact\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
     <None Include="Manager\Student\Model.edmx.diagram">
       <DependentUpon>Model.edmx</DependentUpon>
     </None>
@@ -563,6 +612,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\School123.jpg" />
+    <Content Include="Manager\Contact\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Manager\Contact\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
     <Content Include="Manager\Student\Model.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model.edmx</DependentUpon>
