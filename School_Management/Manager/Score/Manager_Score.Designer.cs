@@ -30,10 +30,10 @@ namespace School_Management.Manager.Score
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions windowsUIButtonImageOptions7 = new DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions();
+            DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions windowsUIButtonImageOptions1 = new DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Manager_Score));
-            DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions windowsUIButtonImageOptions8 = new DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions();
-            DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions windowsUIButtonImageOptions9 = new DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions();
+            DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions windowsUIButtonImageOptions2 = new DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions();
+            DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions windowsUIButtonImageOptions3 = new DevExpress.XtraBars.Docking2010.WindowsUIButtonImageOptions();
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.TabPage1 = new DevExpress.XtraTab.XtraTabPage();
@@ -46,19 +46,19 @@ namespace School_Management.Manager.Score
             this.Score_lb = new DevExpress.XtraEditors.LabelControl();
             this.Course_list = new DevExpress.XtraEditors.LabelControl();
             this.Id_list = new DevExpress.XtraEditors.LabelControl();
-            this.courseBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataSet_Student = new School_Management.DataSet_Student();
+            this.DataGridView = new System.Windows.Forms.DataGridView();
             this.xtraTabControl2 = new DevExpress.XtraTab.XtraTabControl();
             this.XtraTabPage_Show = new DevExpress.XtraTab.XtraTabPage();
             this.ShowScore = new DevExpress.XtraEditors.SimpleButton();
             this.Show_student = new DevExpress.XtraEditors.SimpleButton();
+            this.courseBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSet_Student = new School_Management.DataSet_Student();
             this.add_StudentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.add_StudentTableAdapter = new School_Management.DataSet_StudentTableAdapters.Add_StudentTableAdapter();
             this.tableAdapterManager = new School_Management.DataSet_StudentTableAdapters.TableAdapterManager();
             this.courseTableAdapter = new School_Management.DataSet_StudentTableAdapters.CourseTableAdapter();
             this.scoreTableAdapter = new School_Management.DataSet_StudentTableAdapters.ScoreTableAdapter();
             this.scoreBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.DataGridView = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
@@ -66,14 +66,14 @@ namespace School_Management.Manager.Score
             this.TabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Score_tb.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Id_tb.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.courseBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet_Student)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl2)).BeginInit();
             this.xtraTabControl2.SuspendLayout();
             this.XtraTabPage_Show.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.courseBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet_Student)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.add_StudentBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.scoreBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -125,13 +125,13 @@ namespace School_Management.Manager.Score
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.windowsUIButtonPanel1.BackColor = System.Drawing.Color.LightGray;
-            windowsUIButtonImageOptions7.Image = ((System.Drawing.Image)(resources.GetObject("windowsUIButtonImageOptions7.Image")));
-            windowsUIButtonImageOptions8.Image = ((System.Drawing.Image)(resources.GetObject("windowsUIButtonImageOptions8.Image")));
-            windowsUIButtonImageOptions9.Image = ((System.Drawing.Image)(resources.GetObject("windowsUIButtonImageOptions9.Image")));
+            windowsUIButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("windowsUIButtonImageOptions1.Image")));
+            windowsUIButtonImageOptions2.Image = ((System.Drawing.Image)(resources.GetObject("windowsUIButtonImageOptions2.Image")));
+            windowsUIButtonImageOptions3.Image = ((System.Drawing.Image)(resources.GetObject("windowsUIButtonImageOptions3.Image")));
             this.windowsUIButtonPanel1.Buttons.AddRange(new DevExpress.XtraEditors.ButtonPanel.IBaseButton[] {
-            new DevExpress.XtraBars.Docking2010.WindowsUIButton("     Add     ", true, windowsUIButtonImageOptions7, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "Add a new score", -1, true, null, true, false, true, "A1", 1, false),
-            new DevExpress.XtraBars.Docking2010.WindowsUIButton("     Delete     ", true, windowsUIButtonImageOptions8, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "You want to delete the score, click here", -1, true, null, true, false, true, "A2", 1, false),
-            new DevExpress.XtraBars.Docking2010.WindowsUIButton("     Refresh     ", true, windowsUIButtonImageOptions9, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", -1, true, null, true, false, true, "A3", 1, false)});
+            new DevExpress.XtraBars.Docking2010.WindowsUIButton("     Add     ", true, windowsUIButtonImageOptions1, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "Add a new score", -1, true, null, true, false, true, "A1", 1, false),
+            new DevExpress.XtraBars.Docking2010.WindowsUIButton("     Delete     ", true, windowsUIButtonImageOptions2, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "You want to delete the score, click here", -1, true, null, true, false, true, "A2", 1, false),
+            new DevExpress.XtraBars.Docking2010.WindowsUIButton("     Refresh     ", true, windowsUIButtonImageOptions3, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", -1, true, null, true, false, true, "A3", 1, false)});
             this.windowsUIButtonPanel1.Location = new System.Drawing.Point(3, 397);
             this.windowsUIButtonPanel1.Name = "windowsUIButtonPanel1";
             this.windowsUIButtonPanel1.Size = new System.Drawing.Size(384, 92);
@@ -213,15 +213,16 @@ namespace School_Management.Manager.Score
             this.Id_list.TabIndex = 9;
             this.Id_list.Text = "ID Student";
             // 
-            // courseBindingSource
+            // DataGridView
             // 
-            this.courseBindingSource.DataMember = "Course";
-            this.courseBindingSource.DataSource = this.dataSet_Student;
-            // 
-            // dataSet_Student
-            // 
-            this.dataSet_Student.DataSetName = "DataSet_Student";
-            this.dataSet_Student.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.DataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridView.Location = new System.Drawing.Point(2, 105);
+            this.DataGridView.Name = "DataGridView";
+            this.DataGridView.Size = new System.Drawing.Size(593, 418);
+            this.DataGridView.TabIndex = 3;
             // 
             // xtraTabControl2
             // 
@@ -265,6 +266,16 @@ namespace School_Management.Manager.Score
             this.Show_student.Text = "Show Student";
             this.Show_student.Click += new System.EventHandler(this.Show_student_Click);
             // 
+            // courseBindingSource
+            // 
+            this.courseBindingSource.DataMember = "Course";
+            this.courseBindingSource.DataSource = this.dataSet_Student;
+            // 
+            // dataSet_Student
+            // 
+            this.dataSet_Student.DataSetName = "DataSet_Student";
+            this.dataSet_Student.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // add_StudentBindingSource
             // 
             this.add_StudentBindingSource.DataMember = "Add_Student";
@@ -299,14 +310,6 @@ namespace School_Management.Manager.Score
             this.scoreBindingSource.DataMember = "Score";
             this.scoreBindingSource.DataSource = this.dataSet_Student;
             // 
-            // DataGridView
-            // 
-            this.DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGridView.Location = new System.Drawing.Point(2, 105);
-            this.DataGridView.Name = "DataGridView";
-            this.DataGridView.Size = new System.Drawing.Size(593, 418);
-            this.DataGridView.TabIndex = 3;
-            // 
             // Manager_Score
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -314,6 +317,7 @@ namespace School_Management.Manager.Score
             this.ClientSize = new System.Drawing.Size(1004, 528);
             this.Controls.Add(this.splitContainerControl1);
             this.Name = "Manager_Score";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Manager Score";
             this.Load += new System.EventHandler(this.Manager_Score_Load);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).EndInit();
@@ -324,14 +328,14 @@ namespace School_Management.Manager.Score
             this.TabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Score_tb.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Id_tb.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.courseBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet_Student)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl2)).EndInit();
             this.xtraTabControl2.ResumeLayout(false);
             this.XtraTabPage_Show.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.courseBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet_Student)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.add_StudentBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.scoreBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }

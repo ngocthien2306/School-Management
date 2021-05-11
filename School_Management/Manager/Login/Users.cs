@@ -18,6 +18,11 @@ namespace School_Management.Manager.Login
             this.Username = user;
             this.Password = pass;
         }
+        public static int GlobleUserID { get; private set; }
+        public static void SetGlobleUserID(int UserID)
+        {
+            GlobleUserID = UserID;
+        }
         static My_Database connect = new My_Database();
         public bool GetUser(string user, string pass)
         {

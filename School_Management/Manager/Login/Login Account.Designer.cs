@@ -82,6 +82,13 @@ namespace School_Management.Manager.Login
             this.Login_bt.Text = "Login";
             this.Login_bt.Click += new System.EventHandler(this.Login_bt_Click_1);
             // 
+            // defaultToolTipController1
+            // 
+            // 
+            // 
+            // 
+            this.defaultToolTipController1.DefaultController.AutoPopDelay = 10000;
+            // 
             // Radio_Student
             // 
             this.defaultToolTipController1.SetAllowHtmlText(this.Radio_Student, DevExpress.Utils.DefaultBoolean.Default);
@@ -157,7 +164,7 @@ namespace School_Management.Manager.Login
             this.Exit_bt.Appearance.ForeColor = System.Drawing.Color.DodgerBlue;
             this.Exit_bt.Appearance.Options.UseFont = true;
             this.Exit_bt.Appearance.Options.UseForeColor = true;
-            this.Exit_bt.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.Exit_bt.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Exit_bt.ImageOptions.Image")));
             this.Exit_bt.Location = new System.Drawing.Point(12, 324);
             this.Exit_bt.Name = "Exit_bt";
             this.Exit_bt.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;

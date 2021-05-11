@@ -805,6 +805,7 @@ namespace School_Management.Manager.Student
             this.Controls.Add(this.ribbon);
             this.Name = "Manager_Student";
             this.Ribbon = this.ribbon;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StatusBar = this.ribbonStatusBar;
             this.Text = "Manager Student ";
             this.Load += new System.EventHandler(this.Manager_Student_Load);

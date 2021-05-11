@@ -29,8 +29,9 @@ namespace School_Management.Manager.Login
                 Users users = new Users();
                 if (users.Login(user, pass))
                 {
-                    MessageBox.Show("Login Successful! Please click OK to continue", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Manager_Student manager = new Manager_Student();
+                    Progress progress = new Progress();
+                    progress.Show();
                     manager.Show();
                     this.Hide();
                 }

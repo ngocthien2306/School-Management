@@ -11,6 +11,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using School_Management.Manager.Course;
 using School_Management.Manager.Score;
+using DevExpress.XtraEditors;
+
 namespace School_Management.Manager.Student
 {
     public partial class Manager_Student : DevExpress.XtraBars.Ribbon.RibbonForm
@@ -28,7 +30,7 @@ namespace School_Management.Manager.Student
 
         private void M010103_ItemClick(object sender, ItemClickEventArgs e)
         {
-            DialogResult exit = MessageBox.Show("Do you want to close program?", "Close Program", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult exit = XtraMessageBox.Show("Do you want to close program?", "Close Program", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if(exit == DialogResult.Yes)
             {
                 Application.Exit();
@@ -125,7 +127,7 @@ namespace School_Management.Manager.Student
             }
             catch
             {
-                MessageBox.Show("The information a new record is blank. Please enter again!", "Profile", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                XtraMessageBox.Show("The information a new record is blank. Please enter again!", "Profile", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 

@@ -52,6 +52,7 @@ namespace School_Management.Manager.Score
             //    CommandText = "SELECT id, firstname, lastname FROM Add_Student"
             //};
             //GridControl.DataSource = student.GetStudents(getAllstudent);
+
             table = course.GetAll_ID_label();
             foreach (DataRow row in table.Rows)
             {
@@ -60,13 +61,13 @@ namespace School_Management.Manager.Score
         }
         public void RemoveScore()
         {
-            int id = Convert.ToInt32(Id_tb.Text);
-            int cid = Convert.ToInt32(table.Rows[ComboBox_Course.SelectedIndex][0].ToString());
             try
             {
                 DialogResult data = MessageBox.Show("Are you sure detele this record?", "Delete Score", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (data == DialogResult.Yes)
                 {
+                    int id = Convert.ToInt32(Id_tb.Text);
+                    int cid = Convert.ToInt32(table.Rows[ComboBox_Course.SelectedIndex][0].ToString());
                     if (score.Delete_Score(id, cid))
                     {
                         MessageBox.Show("Delete successful!", "Delete Score", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -136,7 +137,7 @@ namespace School_Management.Manager.Score
                     this.RemoveScore();
                     break;
                 case "A3":
-
+                    this.add_StudentTableAdapter.Fill(this.dataSet_Student.Add_Student);
                     break;
             }
         }
@@ -146,16 +147,15 @@ namespace School_Management.Manager.Score
             DataGridView.DataSource = score.GetStudentScore();
         }
 
-
+        private void ShowScore_Click(object sender, EventArgs e)
+        {
+            DataGridView.DataSource = score.GetAllScore();
+        }
         private void scoreBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
 
 
         }
 
-        private void ShowScore_Click(object sender, EventArgs e)
-        {
-            DataGridView.DataSource = score.GetAllScore();
-        }
     }
 }
